@@ -1,0 +1,295 @@
+agent_of_searching_the_most_relevant_key_element
+=> nrel_main_idtf:
+	[агентная scp-программа нахождения наиболее релевантного ключевого узла для пользователя] (* <- lang_ru;; *);
+	[agent scp-program of searching the most relevant key element for an user] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_searching_the_most_relevant_key_element
+	(*
+	-> rrel_params: .agent_of_searching_the_most_relevant_key_element_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_searching_the_most_relevant_key_element_operator_set 
+		(*
+		-> rrel_init: .agent_of_searching_the_most_relevant_key_element_init1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_init2;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_init2
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_searching_the_most_relevant_key_element;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_searching_the_most_relevant_key_element_init3;;
+			=> nrel_else: .agent_of_searching_the_most_relevant_key_element_return;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_init3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _user;;
+
+			=> nrel_then: .agent_of_searching_the_most_relevant_key_element_init4;;
+			=> nrel_else: .agent_of_searching_the_most_relevant_key_element_return;; 
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_init4
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: ui_user;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _user;;
+
+			=> nrel_then: .agent_of_searching_the_most_relevant_key_element_search1;;
+			=> nrel_else: .agent_of_searching_the_most_relevant_key_element_add_validating_message;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_search1
+			(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const:
+					[*
+					_u _<= nrel_authors:: _action;;
+					_action _-> _example;;
+					*];;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+				(*
+				-> ...
+					(*
+					-> rrel_1: rrel_scp_const: _example;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_set: _actions;;
+					*);;
+				*);;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ...
+				(*
+				-> ...
+					(*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _u;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _user;;
+					*);;
+				*);;
+
+			=> nrel_then: .agent_of_searching_the_most_relevant_key_element_gen1;;
+			=> nrel_else: .agent_of_searching_the_most_relevant_key_element_return;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_gen1
+			(*
+		  	<- genEl;;
+
+		  	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_struct: rrel_const: _answer_of_agent;;
+
+		  	=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_gen2;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_gen2
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _max_num_of_actions;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];; 
+
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_count1;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_count1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _actions;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _action;;
+
+			=> nrel_then: .agent_of_searching_the_most_relevant_key_element_count2;;
+			=> nrel_else: .agent_of_searching_the_most_relevant_key_element_end1;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_count2
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _num_of_actions;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];; 
+
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_count3;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_count3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _actions;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action;;
+
+			=> nrel_then: .agent_of_searching_the_most_relevant_key_element_count4;;
+			=> nrel_else: .agent_of_searching_the_most_relevant_key_element_count6;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_count4
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;; 
+
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_count5;;
+			*);;	
+
+		-> .agent_of_searching_the_most_relevant_key_element_count5
+			(*
+		  	<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _num_of_actions;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _num_of_actions;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+
+		  	=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_count3;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_count6
+			(*
+			<- ifGr;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _num_of_actions;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _max_num_of_actions;;
+
+			=> nrel_then: .agent_of_searching_the_most_relevant_key_element_count7;;
+			=> nrel_else: .agent_of_searching_the_most_relevant_key_element_count1;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_count7
+			(*
+		  	<- varAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _most_relevant_element;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _action;;
+
+		  	=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_count7a;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_count7a
+			(*
+		  	<- contAssign;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _max_num_of_actions;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _num_of_actions;;
+
+		  	=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_count1;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_end1
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: relevant_key_element;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belong_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _most_relevant_element;;
+			
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_end2;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_end2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: relevant_key_element;;
+
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_end3;; 
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_end3
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _belong_arc;;
+
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_end4;; 
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_end4
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer_of_agent;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _most_relevant_element;;
+
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_end5;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_end5
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_of_agent;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+			
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_end6;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_end6
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_return;; 
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_add_validating_message
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_searching_the_most_relevant_key_element_operator_call_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter! It must be an user.];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
+
+		  	=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_add_validating_message_wr;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_add_validating_message_wr
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
+
+		  	=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_return;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;

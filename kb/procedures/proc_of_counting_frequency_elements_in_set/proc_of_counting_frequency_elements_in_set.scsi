@@ -1,0 +1,191 @@
+scp_program-> proc_of_counting_frequency_elements_in_set
+(*
+     -> rrel_params: .proc_of_counting_frequency_elements_in_set_params
+      	(*
+		-> rrel_1: rrel_in: _actions;;
+		-> rrel_2: rrel_in: _answer;;
+	 	 *);;
+
+	 -> rrel_operators: .proc_of_counting_frequency_elements_in_set_operator_set
+	 	(*
+		-> rrel_init: .proc_of_counting_frequency_elements_in_set_operator1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _actions;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _action;;
+
+			=> nrel_then: .proc_of_counting_frequency_elements_in_set_operator2;;
+			=> nrel_else: .proc_of_counting_frequency_elements_in_set_operator8;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator2
+			(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _num_of_actions;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];; 
+
+			=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator3;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _actions;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action;;
+
+			=> nrel_then: .proc_of_counting_frequency_elements_in_set_operator4;;
+			=> nrel_else: .proc_of_counting_frequency_elements_in_set_operator6;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator4
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;; 
+
+			=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator5;;
+			*);;	
+
+		-> .proc_of_counting_frequency_elements_in_set_operator5
+			(*
+		  	<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _num_of_actions;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _num_of_actions;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+
+		  	=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator3;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator6
+			(*
+			<- sys_gen;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const:
+					[*
+					frequency_of_access_to_key_elements _-> _elem1;;
+					exact_value _-> _elem1;;
+					_elem1 _-> _found;;
+					_elem1 _=> nrel_amount:: _elem2;;
+					number _-> _elem2;;
+					_elem3 _=> nrel_identification:: _elem2;;
+					_elem3 _-> rrel_decimal:: _result;;
+					*];;
+			-> rrel_2: rrel_assign: rrel_scp_var: _useless;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ...
+				(*
+				-> ...
+					(*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _found;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _action;;
+					*);;
+				-> ...
+					(*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _result;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _num_of_actions;;
+					*);;
+				*);;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator7;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator7
+			(*
+		  	<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action;;
+
+		  	=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator7a;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator7a
+			(*
+		  	<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _num_of_actions;;
+
+		  	=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator1;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator8
+			(*
+		  	<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: frequency_of_access_to_key_elements;;
+
+		  	=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator9;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator9
+			(*
+		  	<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: exact_value;;
+
+		  	=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator10;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator10
+			(*
+		  	<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_amount;;
+
+		  	=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator11;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator11
+			(*
+		  	<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: number;;
+
+		  	=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator12;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator12
+			(*
+		  	<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+		  	=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator13;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator13
+			(*
+		  	<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_decimal;;
+
+		  	=> nrel_goto: .proc_of_counting_frequency_elements_in_set_operator_return;;
+			*);;
+
+		-> .proc_of_counting_frequency_elements_in_set_operator_return 
+			(*
+			<- return;;
+			*);;
+	 	*);;
+*);;

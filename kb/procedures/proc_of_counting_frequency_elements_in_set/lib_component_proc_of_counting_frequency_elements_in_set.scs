@@ -1,0 +1,27 @@
+lib_component_proc_of_counting_frequency_elements_in_set
+=> nrel_main_idtf:
+	[Компонент библиотеки. scp-программа определения количества входжений каждого элемента во множество]
+	(* <- lang_ru;; *);
+	[Library component. scp-program of determining the count of each an element in a set]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_of_counting_frequency_elements_in_set;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/proc_of_counting_frequency_elements_in_set.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_of_counting_frequency_elements_in_set = [*^"file://proc_of_counting_frequency_elements_in_set.scsi"*];;
+
