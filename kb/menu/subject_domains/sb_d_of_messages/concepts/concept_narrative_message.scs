@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_narrative_message;;
+
+concept_narrative_message => nrel_main_idtf: [повествовательное сообщение](*<- lang_ru ;;*);;
+concept_narrative_message => nrel_idtf: [множество повествовательных сообщений](*<- lang_ru ;;*);;
+concept_narrative_message => nrel_main_idtf: [narrative message](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_narrative_message;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_message;;
+		-> nrel_recipient;;
+		-> ui_user;;
+		*);;
+	=> nrel_main_idtf: [Опр.(повествовательное сообщение)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Повествовательное сообщение — сообщение, предоставляющее получателю* некоторую информацию и не требующее от пользователя никаких дополнительных действий.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

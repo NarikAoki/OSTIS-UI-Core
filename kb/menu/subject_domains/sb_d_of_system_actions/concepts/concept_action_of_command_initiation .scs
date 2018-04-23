@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_action_of_command_initiation;;
+
+concept_action_of_command_initiation => nrel_main_idtf: [действие инициирования команды](*<- lang_ru ;;*);;
+concept_action_of_command_initiation => nrel_idtf: [множество действий инициирования команды](*<- lang_ru ;;*);;
+concept_action_of_command_initiation => nrel_main_idtf: [action of command initiation](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_action_of_command_initiation;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_receptor_systemic_action;;
+		-> concept_action_specification;;
+		-> concept_command;;
+		*);;
+	=> nrel_main_idtf: [Опр.(действие инициирования команды)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие инициирования команды — рецепторное системное действие, связанное с формированием спецификации действия для выполнения некоторой команды.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

@@ -1,0 +1,35 @@
+sc_node_not_relation -> concept_systemic_action;;
+
+concept_systemic_action => nrel_main_idtf: [системное действие](*<- lang_ru ;;*);;
+concept_systemic_action => nrel_idtf: [множество системных действий](*<- lang_ru ;;*);;
+concept_systemic_action => nrel_main_idtf: [systemic action](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_systemic_action;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_action;;      
+		-> ostis_system;;
+		*);;
+	=> nrel_main_idtf: [Опр.(системное действие)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Системное действие — действие, инициированное ostis-системой.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_systemic_action => nrel_inclusion:
+	concept_action_of_message_generation;
+	concept_action_of_ontology_equalization;
+	concept_action_of_knowledge_base_integration;;
+
+concept_systemic_action <= nrel_subdividing: ...
+	(*
+	-> concept_effector_systemic_action;;
+	-> concept_action_of_translation_into_an_external_language;;
+	-> concept_receptor_systemic_action;;
+	-> concept_action_of_command_initiation;;
+	=> nrel_main_idtf: [Разбиение по признаку инициирования действия.](*<- lang_ru ;;*);;
+	*);; 
+

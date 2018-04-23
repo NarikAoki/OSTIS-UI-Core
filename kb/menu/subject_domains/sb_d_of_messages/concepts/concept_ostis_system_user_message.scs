@@ -1,0 +1,29 @@
+sc_node_not_relation -> concept_ostis_system_user_message;;
+
+concept_ostis_system_user_message => nrel_main_idtf: [сообщение пользователя ostis-системы](*<- lang_ru ;;*);;
+concept_ostis_system_user_message => nrel_idtf: [множество сообщений пользователя ostis-системы](*<- lang_ru ;;*);;
+concept_ostis_system_user_message => nrel_main_idtf: [message of ostis-system user](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_ostis_system_user_message;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_message;;
+		-> nrel_sender;;    
+		-> ui_user;;
+		-> ostis_system;;
+		*);;
+	=> nrel_main_idtf: [Опр.(сообщение пользователя ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Сообщение пользователя ostis-системы — сообщение, отправителем* которого является пользователь ostis-системы.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+	
+concept_ostis_system_user_message <= nrel_subdividing: ...
+	(* 
+	-> concept_user_message_in_inner_language;;
+	-> concept_user_message_in_external_language;;
+	=> nrel_main_idtf: [Разбиение по признаку формы сообщения.](*<- lang_ru ;;*);;
+	*);; 
