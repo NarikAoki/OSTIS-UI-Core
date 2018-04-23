@@ -1,0 +1,29 @@
+sc_node_not_relation ->	concept_command_formed_in_external_language;;
+	
+concept_command_formed_in_external_language => nrel_main_idtf: [команда, оформленная на внешнем языке] (*<- lang_ru ;;*);;
+concept_command_formed_in_external_language  => nrel_idtf: [команда на внешнем языке] (*<- lang_ru ;;*);;
+concept_command_formed_in_external_language  => nrel_main_idtf: [command formed in an external language] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(команда, оформленная на внешнем языке)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_command_formed_in_external_language;;
+	<= nrel_using_constants: ...
+		(*
+		-> command;;
+		-> concept_command_specification;;
+		-> knowledge_base;;
+		-> ui_user;;
+		-> concept_tool;;
+		-> concept_instruction;;
+		-> languages;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Команда, оформленная на внешнем языке — команда, спецификация которой генерируется либо самим пользователем с использованием средств редакторов базы знаний, либо с помощью инструкций на естественном языке (например, голосовых команд).](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+concept_command_specification => nrel_main_idtf: [спецификация комманды] (*<- lang_ru ;;*);;  
+concept_instruction => nrel_main_idtf: [интсрукции] (*<- lang_ru ;;*);;  
+concept_tool => nrel_main_idtf: [инструмент] (*<- lang_ru ;;*);; 	

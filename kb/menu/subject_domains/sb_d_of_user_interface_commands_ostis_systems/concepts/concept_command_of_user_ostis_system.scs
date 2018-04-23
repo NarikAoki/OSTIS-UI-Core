@@ -1,0 +1,30 @@
+sc_node_not_relation ->	concept_command_of_user_ostis_system;;
+	
+concept_command_of_user_ostis_system  => nrel_main_idtf: [интерфейсная команда пользователя ostis-системы] (*<- lang_ru ;;*);;
+concept_command_of_user_ostis_system  => nrel_idtf: [команда пользователя ostis-системы] (*<- lang_ru ;;*);;
+concept_command_of_user_ostis_system  => nrel_main_idtf: [command of user ostis-system] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(интерфейсная команда пользователя ostis-системы)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_command_of_user_ostis_system ;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_action_specification;;
+		-> ui_user;;
+		-> ostis_system;;
+		-> concept_language_of_interface;;
+		-> concept_class_of_action;;
+		-> set;;
+		-> entity;;
+		-> nrel_argument;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Интерфейсная команда пользователя ostis-системы — спецификация инициируемого пользователем действия ostis-системы, оформленная на языке интерфейсных действий пользователей ostis-системы и включающая в себя указание класса инициируемого действия и указание аргументов* этого действия, то есть множества сущностей, над которыми это действие должно быть выполнено.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+concept_command_of_user_ostis_system  => nrel_inclusion: concept_command_formed_in_language_of_interface; concept_command_formed_in_external_language;;
+
+concept_language_of_interface => nrel_main_idtf: [язык пользовательских интерфейсов] (*<- lang_ru ;;*);; 

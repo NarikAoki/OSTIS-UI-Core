@@ -1,0 +1,38 @@
+ sc_node_not_relation -> concept_sc_text_copy_action;;
+
+concept_sc_text_copy_action => nrel_main_idtf: [действие копирования sc-текста] (*<- lang_ru ;;*);;
+concept_sc_text_copy_action => nrel_idtf: [копирование sc-текста] (*<- lang_ru ;;*);;
+concept_sc_text_copy_action => nrel_main_idtf: [sc-text copy action] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие копирования sc-текста)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_sc_text_copy_action;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_sc_text;;
+		-> concept_sc_text;;
+		-> nrel_fragment;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие копирования sc-текста — элементарное пользовательское действие над sc-текстом, связанное с сохранением некоторого предварительно выделенного фрагмента sc-текста для вставки в другой sc-текст.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_sc_text_copy_action;;
+	-> rrel_key_sc_element: concept_key_c;;
+	-> rrel_key_sc_element: concept_key_ctrl;;
+	-> rrel_key_sc_element: concept_key_combination;;
+  	=> nrel_main_idtf: [Утв. (действие копирования sc-текста, клавиша «Сtrl», клавиша «С», комбинация клавиш).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие копирования sc-текста может быть реализовано комбинацией клавиш «Сtrl» + «С» на клавиатуре.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	*);;
+
+concept_key_c => nrel_main_idtf: [клавиша «c»] (*<- lang_ru ;;*);; 
+nrel_fragment => nrel_main_idtf: [фрагмент*] (*<- lang_ru ;;*);; 

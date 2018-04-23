@@ -1,0 +1,35 @@
+sc_node_not_relation ->	concept_sc_text_insertion_action;;
+
+concept_sc_text_insertion_action => nrel_main_idtf: [действие вставки sc-текста] (*<- lang_ru ;;*);;
+concept_sc_text_insertion_action  => nrel_idtf: [вставка sc-текста] (*<- lang_ru ;;*);;
+concept_sc_text_insertion_action  => nrel_main_idtf: [sc-text insertion action] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие вставки sc-текста)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_sc_text_insertion_action;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_sc_text;;
+		-> concept_sc_text;;
+		-> nrel_fragment;;
+		*);;	
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие вставки sc-текста — элементарное пользовательское действие над sc-текстом, связанное со вставкой фрагмента sc-текста в указанное место другого sc-текста.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_sc_text_selection_action;;
+	-> rrel_key_sc_element: concept_key_v;;
+	-> rrel_key_sc_element: concept_key_ctrl;;
+	-> rrel_key_sc_element: concept_key_combination;;
+  	=> nrel_main_idtf: [Утв. (действие вставки sc-текста, клавиша «Сtrl», клавиша «->», клавиша «<-», клавиша «v», левая кнопка мыши, комбинация клавиш).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие вставки sc-текста может быть реализовано комбинацией клавиш «Сtrl» + «V» на клавиатуре.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	*);;

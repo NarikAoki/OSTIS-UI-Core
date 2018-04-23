@@ -1,0 +1,98 @@
+sc_node_not_relation ->	concept_window;;
+
+concept_window  => nrel_main_idtf: [окно] (*<- lang_ru ;;*);;
+concept_window  => nrel_idtf: [множество окон] (*<- lang_ru ;;*);;
+concept_window  => nrel_main_idtf: [window] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	-> rrel_key_sc_element: concept_window;;
+	<= nrel_using_constants: ...
+	(*
+	-> concept_sign;;
+	-> file;;
+	-> concept_sc_text;;
+		*);;
+	=> nrel_main_idtf: [Опр.(окно)] (*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Окно - знак sc-текста или знак файла (который может быть пустым), хранимый в sc-памяти в текущий момент времени и отображаемый на экране.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+	-> rrel_key_sc_element: concept_child_window;;
+	-> rrel_key_sc_element: nrel_inclusion;;
+	-> rrel_key_sc_element: concept_parent_window;;
+  	=> nrel_main_idtf: [Утв. (дочернее окно, родительское окно, входить в состав*).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		->[Дочернее окно должно полностью входить в состав родительского окна.](* <- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_user_interfaces;;
+	*);;
+
+statement -> ...
+	(*
+	-> rrel_key_sc_element: concept_conversation_session;;
+	-> rrel_key_sc_element: concept_ostis_system;;
+	-> rrel_key_sc_element: concept_user;;
+	-> rrel_key_sc_element: concept_main_window;;
+	-> rrel_key_sc_element: concept_window;;
+  	=> nrel_main_idtf: [Утв. (главное окно, пользователь, ostis-система, сеанс диалога*).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [В рамках одного сеанса диалога ostis-системы с пользователем возможно существование только одного главного окна.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_user_interfaces;;
+	*);;
+
+concept_window  => nrel_inclusion: concept_frame; ostis_system_dialog_window; ostis_system_main_window;;
+
+concept_window  <= nrel_subdividing: ...
+	(*
+	->concept_ostis_system_contour_window;;
+	->concept_ostis_system_frame_window;;
+	=> nrel_main_idtf: [Разбиение по признаку содержимого окна.] (*<- lang_ru;; *);;
+	*);;
+
+concept_window  <= nrel_subdividing: ...
+	(*
+	->concept_ostis_system_temporary_window;;
+	->concept_ostis_system_permanent_window;;
+	=> nrel_main_idtf: [Разбиение по признаку темпоральности.] (*<-  lang_ru;;*) ;;
+	*);;
+
+concept_window  <= nrel_subdividing: ...
+	(*
+	->concept_ostis_system_floating_window;;
+	->concept_ostis_system_fixed_window;;
+	=> nrel_main_idtf: [Разбиение по признаку позиционирования на экране.] (*<- lang_ru ;;*);;
+	*);;	
+
+concept_window  <= nrel_subdividing: ...
+	(*
+	-> concept_window_ostis_system_with_horizontal_and_vertical_scroll_bar;;		
+	-> concept_window_ostis_system_with_horizontal_scroll_bar;;	
+	->concept_window_ostis_system_with_vertical_scroll_bar;;
+	->concept_window_ostis_system_without_scroll_bar;;
+	=> nrel_main_idtf: [Разбиение по признаку наличия полосы прокрутки.] (* <-  lang_ru;; *);;
+	*);;
+
+concept_window  <= nrel_subdividing: ...
+	(*		
+	->concept_modal_window_ostis_system;;
+	->concept_non_modal_window_ostis_system;;
+	=> nrel_main_idtf: [Разбиение по признаку возможности закрытия диалогового окна.] (* <-  lang_ru;;*) ;;
+	*);;
+ 	
+concept_pop_up_ostis_system_window => nrel_main_idtf: [всплывающее окно ostis-системы] (*<- lang_ru ;;*);;
+concept_ostis_system_floating_window => nrel_main_idtf: [плавающее окно ostis-системы] (*<- lang_ru ;;*);;
+concept_ostis_system_fixed_window => nrel_main_idtf: [фиксированное окно ostis-системы] (*<- lang_ru ;;*);;
+concept_ostis_system_temporary_window => nrel_main_idtf: [временное окно ostis-системы] (*<- lang_ru ;;*);;
+concept_ostis_system_permanent_window => nrel_main_idtf: [постоянное окно ostis-системы] (*<- lang_ru ;;*);;
+concept_window_ostis_system_with_horizontal_and_vertical_scroll_bar => nrel_main_idtf: [окно ostis-системы с горизонтальной и вертикальной полосой прокрутки ] (*<- lang_ru ;;*);;
+concept_window_ostis_system_with_horizontal_scroll_bar => nrel_main_idtf: [окно ostis-системы с горизонтальной полосой прокрутки] (*<- lang_ru ;;*);;
+concept_window_ostis_system_with_vertical_scroll_bar => nrel_main_idtf: [окно ostis-системы с вертикальной полосой прокрутки] (*<- lang_ru ;;*);;
+concept_window_ostis_system_without_scroll_bar => nrel_main_idtf: [окно ostis-системы без полос прокрутки] (*<- lang_ru ;;*);;

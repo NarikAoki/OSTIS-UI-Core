@@ -1,0 +1,26 @@
+sc_node_not_relation ->	concept_elementary_user_action;;
+
+concept_elementary_user_action  => nrel_main_idtf: [элементарное пользовательское действие] (*<- lang_ru ;;*);;
+concept_elementary_user_action  => nrel_idtf: [пользовательское действие] (*<- lang_ru ;;*);;
+concept_elementary_user_action  => nrel_main_idtf: [elementary user action] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(элементарное пользовательское действие)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_elementary_user_action;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_interface_action;;
+		-> ostis_system;;
+		-> ui_user;;
+		-> nrel_inclusion;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Элементарное пользовательское действие — такое интерфейсное действие пользователя ostis-системы, для которого не существует других входящих в его состав интерфейсных действий этого же пользователя.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+concept_elementary_user_action  => nrel_inclusion: concept_elementary_user_action_on_set_of_entity; concept_elementary_user_action_on_entity;;
+
+concept_interface_action  => nrel_main_idtf: [интерфейсное действие] (*<- lang_ru ;;*);;

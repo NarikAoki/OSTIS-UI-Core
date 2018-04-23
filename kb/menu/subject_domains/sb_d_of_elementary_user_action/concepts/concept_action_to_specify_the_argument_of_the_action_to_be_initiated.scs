@@ -1,0 +1,38 @@
+sc_node_not_relation ->	concept_action_to_specify_the_argument_of_the_action_to_be_initiated;;
+
+concept_action_to_specify_the_argument_of_the_action_to_be_initiated => nrel_main_idtf: [действие указания аргумента инициируемого действия] (*<- lang_ru ;;*);;
+concept_action_to_specify_the_argument_of_the_action_to_be_initiated  => nrel_idtf: [указание аргумента инициируемого действия] (*<- lang_ru ;;*);;
+concept_action_to_specify_the_argument_of_the_action_to_be_initiated  => nrel_main_idtf: [action to specify the argument of the action to be initiated] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие указания аргумента инициируемого действия)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_to_specify_the_argument_of_the_action_to_be_initiated;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_to_refine_the_command_specification;;
+		-> nrel_argument;;
+		-> concept_action;;
+		-> concept_list;;
+		-> entity;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие указания аргумента инициируемого действия — элементарное пользовательское действие уточнения спецификации команды, связанное с внесением выбранной сущности в список аргументов некоторого действия.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_to_specify_the_argument_of_the_action_to_be_initiated;;
+	-> rrel_key_sc_element: concept_right_key_of_mouse;;
+	-> rrel_key_sc_element: sc_element;;
+  	=> nrel_main_idtf: [Утв. (действие   указания аргумента инициируемого действия, правая кнопка мыши,  sc-элемент).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие указания аргумента инициируемого действия может быть реализовано нажатием правой кнопки мыши по sc-элементу.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	*);;
+
+concept_right_key_of_mouse => nrel_main_idtf: [правая кнопка мыши] (*<- lang_ru ;;*);;

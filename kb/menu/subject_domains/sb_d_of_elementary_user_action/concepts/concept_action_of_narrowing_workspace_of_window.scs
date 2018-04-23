@@ -1,0 +1,42 @@
+sc_node_not_relation ->	concept_action_of_narrowing_workspace_of_window;;
+	
+concept_action_of_narrowing_workspace_of_window => nrel_main_idtf: [действие сужения рабочей области окна] (*<- lang_ru ;;*);;
+concept_action_of_narrowing_workspace_of_window  => nrel_idtf: [сужение рабочей области окна] (*<- lang_ru ;;*);;
+concept_action_of_narrowing_workspace_of_window => nrel_main_idtf: [action of narrowing workspace of window] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие сужения рабочей области окна)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_narrowing_workspace_of_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_action_of_manipulationg_of_the_working_area_of_the_ostis_system_window;;
+		-> concept_viewport;;
+		-> concept_sc_text;;
+		-> concept_window;;
+		-> ostis_system;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие сужения рабочей области окна — действие манипулирования рабочей областью окна ostis-системы,направленное на уменьшение области просмотра sc-текста, отображённого в некотором окне ostis-системы.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_of_narrowing_workspace_of_window;;
+	-> rrel_key_sc_element: concept_mouse_wheel;;
+	-> rrel_key_sc_element: nrel_back;;
+	-> rrel_key_sc_element:	concept_key_minus;; 
+	-> rrel_key_sc_element: concept_key_ctrl;;
+	-> rrel_key_sc_element: concept_key_combination;;
+     => nrel_main_idtf: [Утв. (действие  сужения рабочей области окна, колесо мыши, назад*, комбинации клавиш, клавиша Ctrl, клавиша “-”).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие сужения рабочей области окна может быть реализовано прокруткой колеса мыши назад или нажатием комбинации клавиш Ctrl и “-”.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	*);;
+
+nrel_back => nrel_main_idtf: [назад*] (*<- lang_ru ;;*);;
+concept_key_minus => nrel_main_idtf: [клавиша «-»] (*<- lang_ru ;;*);;

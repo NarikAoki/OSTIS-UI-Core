@@ -1,0 +1,24 @@
+sc_node_not_relation ->	concept_elementary_user_action_on_the_ostis_system_window;;
+
+concept_elementary_user_action_on_the_ostis_system_window  => nrel_main_idtf: [элементарное пользовательское действие над окном ostis-системы] (*<- lang_ru ;;*);;
+concept_elementary_user_action_on_the_ostis_system_window  => nrel_idtf: [действие над окном ostis-системы] (*<- lang_ru ;;*);;
+concept_elementary_user_action_on_the_ostis_system_window  => nrel_main_idtf: [elementary user action on the ostis system window] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(элементарное пользовательское действие над окном ostis-системы)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_elementary_user_action_on_the_ostis_system_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_entity;;
+		-> concept_window;;
+		-> ostis_system;;
+		-> nrel_argument;;			
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Элементарное пользовательское действие над окном ostis-системы — элементарное пользовательское действие над сущностью, аргументом которого является окно ostis-системы](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+concept_elementary_user_action_on_the_ostis_system_window  => nrel_inclusion: concept_action_of_changing_the_configuration_of_the_ostis_system_window; concept_action_of_manipulationg_of_the_working_area_of_the_ostis_system_window;;

@@ -1,0 +1,36 @@
+sc_node_not_relation ->	concept_sc_text_delete_action;;
+	
+concept_sc_text_delete_action  => nrel_main_idtf: [действие удаления sc-текста] (*<- lang_ru ;;*);;
+concept_sc_text_delete_action  => nrel_idtf: [удаление sc-текста] (*<- lang_ru ;;*);;
+concept_sc_text_delete_action  => nrel_main_idtf: [sc-text delete action] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие удаления  sc-текста)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_sc_text_delete_action;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_sc_text;;
+		-> concept_sc_text;;
+		->concept_key_delete;;
+		-> nrel_fragment;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие удаления sc-текста — элементарное пользовательское действие над sc-текстом, связанное с удалением некоторого предварительно выделенного фрагмента sc-текста.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_sc_text_delete_action;;
+	-> rrel_key_sc_element: concept_key_delete;;
+  	=> nrel_main_idtf: [Утв. (действие удаления sc-текста, клавиша «Delete»).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие удаления sc-текста может быть реализовано нажатием клавиши «Delete» на клавиатуре.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	*);;
+
+concept_key_delete => nrel_main_idtf: [клавиша "Delete"] (*<- lang_ru ;;*);; 
