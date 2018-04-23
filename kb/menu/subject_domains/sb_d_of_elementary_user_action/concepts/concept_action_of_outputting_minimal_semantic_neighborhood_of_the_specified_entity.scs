@@ -1,0 +1,39 @@
+sc_node_not_relation ->	concept_action_of_outputting_minimal_semantic_neighborhood_of_the_specified_entity;;
+	
+concept_action_of_outputting_minimal_semantic_neighborhood_of_the_specified_entity => nrel_main_idtf: [действие вывода минимальной семантической окрестности указанной сущности] (*<- lang_ru ;;*);;
+concept_action_of_outputting_minimal_semantic_neighborhood_of_the_specified_entity  => nrel_idtf: [вывод минимальной семантической окрестности указанной сущности] (*<- lang_ru ;;*);;
+concept_action_of_outputting_minimal_semantic_neighborhood_of_the_specified_entity  => nrel_main_idtf: [action of outputting minimal semantic neighborhood of the specified fact] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие вывода минимальной семантической окрестности указанной сущности)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_outputting_minimal_semantic_neighborhood_of_the_specified_entity;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_entity;;
+		-> nrel_result;;
+		-> structure;;
+		-> entity;;
+		-> semantic_neighborhood;;
+		-> rrel_minimal;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие вывода минимальной семантической окрестности указанной сущности — элементарное пользовательское действие над сущностью, в результате которого выводится минимальная семантическая окрестность некоторой сущности в рамках выбранной структуры (например, окна ostis-системы).](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_of_outputting_minimal_semantic_neighborhood_of_the_specified_entity;;
+	-> rrel_key_sc_element: entity;;
+	-> rrel_key_sc_element: concept_cursor;;
+   	=> nrel_main_idtf: [Утв. (действие вывода минимальной семантической окрестности указанной сущности, сущность, курсор).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие вывода минимальной семантической окрестности указанной сущности может быть реализовано наведением курсора мыши на некоторую сущность.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	*);;
+
+rrel_minimal => nrel_main_idtf: [быть минимальным'] (*<- lang_ru ;;*);; 

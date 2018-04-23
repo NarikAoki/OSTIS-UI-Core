@@ -1,0 +1,42 @@
+sc_node_not_relation ->	concept_action_of_outputting_complete_semantic_neighborhood_of_the_specified_entity;;
+	
+concept_action_of_outputting_complete_semantic_neighborhood_of_the_specified_entity => nrel_main_idtf: [действие вывода полной семантической окрестности указанной сущности] (*<- lang_ru ;;*);;
+concept_action_of_outputting_complete_semantic_neighborhood_of_the_specified_entity  => nrel_idtf: [вывод полной семантической окрестности указанной сущности] (*<- lang_ru ;;*);;
+concept_action_of_outputting_complete_semantic_neighborhood_of_the_specified_entity  => nrel_main_idtf: [action of outputting  complete semantic neighborhood of the specified fact] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие вывода полной семантической окрестности указанной сущности)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_outputting_complete_semantic_neighborhood_of_the_specified_entity;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_entity;;
+		-> nrel_result;;
+		-> structure;;
+		-> entity;;
+		-> semantic_neighborhood;;
+		-> rrel_complete;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие вывода полной семантической окрестности указанной сущности — элементарное пользовательское действие над сущностью, в результате* которого выводится полная семантическая окрестность некоторой сущности в рамках выбранной структуры (например, окна ostis-системы).](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_of_outputting_complete_semantic_neighborhood_of_the_specified_entity;;
+	-> rrel_key_sc_element: entity;;
+	-> rrel_key_sc_element: concept_left_key_of_mouse;;
+     => nrel_main_idtf: [Утв. (действие вывода минимальной семантической окрестности указанной сущности, сущность, курсор).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие вывода полной семантической окрестности указанной сущности может быть реализовано нажатием левой кнопки мыши по сущности.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	*);;
+
+concept_action_of_outputting_complete_semantic_neighborhood_of_the_specified_entity  => nrel_inclusion: concept_action_of_outputting_minimal_semantic_neighborhood_of_the_specified_entity; concept_action_of_outputting_particular_semantic_neighborhood_of_the_specified_entity; concept_action_of_entity_reference_for_which_basic_decomposition_is_requested;;
+
+rrel_complete => nrel_main_idtf: [быть полной'] (*<- lang_ru ;;*);;		
+concept_action_of_entity_reference_for_which_basic_decomposition_is_requested => nrel_main_idtf: [действие указания сущности, для которой запрашивается базовая декомпозиция] (*<- lang_ru ;;*);;	

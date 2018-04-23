@@ -1,0 +1,38 @@
+sc_node_not_relation ->	concept_action_of_canceling_the_specified_arguments_of_the_initiated_action;;
+
+concept_action_of_canceling_the_specified_arguments_of_the_initiated_action => nrel_main_idtf: [действие отмены указанных аргументов инициируемого действия] (*<- lang_ru ;;*);;
+concept_action_of_canceling_the_specified_arguments_of_the_initiated_action => nrel_idtf: [отмена указанных аргументов инициируемого действия] (*<- lang_ru ;;*);;
+concept_action_of_canceling_the_specified_arguments_of_the_initiated_action => nrel_main_idtf: [action of canceling of specified arguments of the initiated action] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие отмены указанных аргументов инициируемого действия)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_canceling_the_specified_arguments_of_the_initiated_action;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_to_refine_the_command_specification;;
+		-> nrel_argument;;
+		-> concept_action;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие отмены указанных аргументов инициируемого действия — элементарное пользовательское действие уточнения спецификации команды, связанное с удалением аргументов из списка аргументов некоторого действия.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_of_canceling_the_specified_arguments_of_the_initiated_action;;
+	-> rrel_key_sc_element: concept_key_backspace;;
+
+     => nrel_main_idtf: [Утв. (действие отмены указанных аргументов инициируемого действия, кнопка «Backspace»).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие отмены указанных аргументов инициируемого действия может быть реализовано нажатием кнопки «Backspace» на клавиатуре.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	*);;
+
+concept_key_backspace => nrel_main_idtf: [клавиша «Backspace»] (*<- lang_ru ;;*);; 
+nrel_argument => nrel_main_idtf: [аргумент*] (*<- lang_ru ;;*);;
+concept_action => nrel_main_idtf: [действие] (*<- lang_ru ;;*);;

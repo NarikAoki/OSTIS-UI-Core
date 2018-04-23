@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_elementary_user_action_on_entity;;
+
+concept_elementary_user_action_on_entity  => nrel_main_idtf: [элементарное пользовательское действие над сущностью] (*<- lang_ru ;;*);;
+concept_elementary_user_action_on_entity  => nrel_idtf: [действие над сущностью] (*<- lang_ru ;;*);;
+concept_elementary_user_action_on_entity  => nrel_main_idtf: [elementary user action on entity] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(элементарное пользовательское действие над сущностью)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_elementary_user_action_on_entity;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action;;
+		-> concept_sign;;
+		-> nrel_argument;;
+		-> entity;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Элементарное пользовательское действие сущностью — элементарное пользовательское действие, аргументом которого является знак сущности.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+concept_elementary_user_action_on_entity  => nrel_inclusion: concept_elementary_user_action_on_the_ostis_system_window; concept_action_of_undoing_the_last_elementary_user_action; concept_action_of_outputting_complete_semantic_neighborhood_of_the_specified_entity;;

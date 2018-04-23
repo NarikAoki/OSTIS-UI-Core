@@ -1,0 +1,24 @@
+sc_node_not_relation ->	concept_class_of_commands_with_three_or_more_arguments;;
+	
+concept_class_of_commands_with_three_or_more_arguments => nrel_main_idtf: [класс команд с тремя и более аргументами] (*<- lang_ru ;;*);;
+concept_class_of_commands_with_three_or_more_arguments  => nrel_idtf: [множество команд с тремя и более аргументами] (*<- lang_ru ;;*);;
+concept_class_of_commands_with_three_or_more_arguments  => nrel_main_idtf: [class of commands with three or more arguments] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(класс команд с тремя и более аргументами)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_class_of_commands_with_three_or_more_arguments;;
+	<= nrel_using_constants: ...
+		(*
+		-> command_class;;
+		-> concept_action_specification;;
+		-> nrel_argument;;
+		-> nrel_type;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Класс команд с тремя и более аргументами — класс команд, фиксирующий факт того, что спецификация выполняемого действия должна содержать три и более входных аргумента конкретного типа. Если порядок задания аргументов для действия имеет значение, то этот факт должен быть указан в спецификации этого действия.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+nrel_type => nrel_main_idtf: [тип*] (*<- lang_ru ;;*);; 	

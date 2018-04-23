@@ -1,0 +1,22 @@
+sc_node_not_relation ->	concept_command_formed_in_language_of_interface;;
+
+concept_command_formed_in_language_of_interface => nrel_main_idtf: [команда, оформленная на языке интерфейсных действий] (*<- lang_ru ;;*);;
+concept_command_formed_in_language_of_interface  => nrel_idtf: [команда на языке интерфейсных действий] (*<- lang_ru ;;*);;
+concept_command_formed_in_language_of_interface  => nrel_main_idtf: [command formed in an external language] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(команда, оформленная на языке интерфейсных действий)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_command_formed_in_language_of_interface;;
+	<= nrel_using_constants: ...
+		(*
+		-> command;;
+		-> concept_command_specification;;
+		-> concept_elementary_user_action;;
+		-> concept_user_interface_component;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Команда, оформленная на языке интерфейсных действий — команда, спецификация которой генерируется автоматически путём инициирования элементарных пользовательских действий при использовании компонентов пользовательского интерфейса.](*<- lang_ru ;;*);;
+		*);;
+	*);; 

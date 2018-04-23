@@ -1,0 +1,45 @@
+sc_node_not_relation ->	concept_action_of_moving_ostis_system_window;;
+	
+concept_action_of_moving_ostis_system_window => nrel_main_idtf: [действие перемещения окна ostis-системы] (*<- lang_ru ;;*);;
+concept_action_of_moving_ostis_system_window  => nrel_idtf: [перемещение окна ostis-системы] (*<- lang_ru ;;*);;
+concept_action_of_moving_ostis_system_window  => nrel_main_idtf: [action of moving ostis-system window] (*<- lang_en ;;*);;
+
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие перемещения окна ostis-системы)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_moving_ostis_system_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_action_of_changing_the_configuration_of_the_ostis_system_window;;
+		-> concept_location;;
+		-> concept_coordinate_system ;;
+		-> concept_window;;
+		-> ostis_system;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие перемещения окна ostis-системы — действие изменения конфигурации окна ostis-системы, связанное с изменением расположения окна ostis-системы относительно некоторой системы координат и относительно других окон ostis-системы.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_of_changing_the_configuration_of_the_ostis_system_window;;
+	-> rrel_key_sc_element: ostis_system;;
+	-> rrel_key_sc_element: concept_cursor;;
+	-> rrel_key_sc_element: concept_left_key_of_mouse;;
+	-> rrel_key_sc_element: concept_window;;
+	-> rrel_key_sc_element: concept_screen;;
+	-> rrel_key_sc_element: concept_point;;
+     => nrel_main_idtf: [Утв. (действие перемещения окна ostis-системы, левой кнопки мыши, окно, ostis-система, курсор, точка, экран).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие перемещения окна ostis-системы может быть реализовано одновременным нажатием левой кнопки мыши по выбранному окну ostis-системы и передвижением курсора мыши в точку экрана, куда нужно переместить это окно.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	*);;
+
+concept_point => nrel_main_idtf: [точка] (*<- lang_ru ;;*);; 
+concept_screen => nrel_main_idtf: [экран] (*<- lang_ru ;;*);; 
+concept_left_key_of_mouse => nrel_main_idtf: [левая кнопка мыши] (*<- lang_ru ;;*);; 

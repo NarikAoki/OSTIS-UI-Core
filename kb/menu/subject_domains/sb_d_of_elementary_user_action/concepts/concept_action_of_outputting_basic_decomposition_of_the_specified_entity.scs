@@ -1,0 +1,37 @@
+sc_node_not_relation ->	concept_action_of_outputting_basic_decomposition_of_the_specified_entity;;
+
+concept_action_of_outputting_basic_decomposition_of_the_specified_entity => nrel_main_idtf: [действие вывода базовой декомпозиции указанной сущности] (*<- lang_ru ;;*);;
+concept_action_of_outputting_basic_decomposition_of_the_specified_entity  => nrel_idtf: [вывод базовой декомпозиции указанной сущности] (*<- lang_ru ;;*);;
+concept_action_of_outputting_basic_decomposition_of_the_specified_entity  => nrel_main_idtf: [action of outputting  basic decomposition of the specified fact] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие вывода базовой декомпозиции указанной сущности)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_outputting_basic_decomposition_of_the_specified_entity;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_entity;;
+		-> entity;;
+		-> nrel_basic_decomposition;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие вывода базовой декомпозиции указанной сущности — элементарное пользовательское действие над сущностью, в результате которого выводится базовая декомпозиция некоторой сущности в рамках выбранной структуры (например, окна ostis-системы).](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_of_outputting_basic_decomposition_of_the_specified_entity;;
+	-> rrel_key_sc_element: entity;;
+	-> rrel_key_sc_element: nrel_basic_decomposition;;
+	-> rrel_key_sc_element:	concept_left_key_of_mouse;; 
+     => nrel_main_idtf: [Утв. (действие вывода базовой декомпозиции указанной сущности, левой кнопки мыши, сущность, базовая декомпозиция*).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие вывода базовой декомпозиции указанной сущности может быть реализовано нажатием левой кнопки мыши по сущности, которая имеет базовую декомпозицию.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	*);;
+
+nrel_basic_decomposition => nrel_main_idtf: [базовая декомпозиция*] (*<- lang_ru ;;*);;
