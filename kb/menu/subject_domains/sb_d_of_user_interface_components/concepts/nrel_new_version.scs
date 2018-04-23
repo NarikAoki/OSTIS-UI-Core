@@ -1,0 +1,31 @@
+sc_node_norole_relation -> nrel_new_version;;
+
+nrel_new_version => nrel_main_idtf: [новая версия*](*<- lang_ru ;;*);;
+nrel_new_version => nrel_idtf: [быть новой версией*](*<- lang_ru ;;*);;
+nrel_new_version => nrel_main_idtf: [new version*](*<- lang_en ;;*);;
+
+binary_relation -> nrel_new_version;;
+oriented_relation -> nrel_new_version;;
+antitransitive_relation -> nrel_new_version;;
+antisymmetric_relation -> nrel_new_version;;
+antireflexive_relation -> nrel_new_version;;
+
+nrel_new_version => nrel_first_domain: concept_user_interface_component;;						
+nrel_new_version => nrel_second_domain: concept_user_interface_component;;
+nrel_new_version => nrel_definitional_domain: concept_user_interface_component;;
+
+definition -> ...	
+	(*
+	-> rrel_key_sc_element: nrel_new_version;;
+	<= nrel_using_constants: ...
+		(*
+		-> binary_relation;;
+		-> oriented_relation;;
+		-> concept_user_interface_component;; 
+		*);;
+	=> nrel_main_idtf: [Опр.(новая версия*)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example : [Новая версия* — бинарное ориентированное отношение, второй компонент связок которого представляет собой компонент пользовательского интерфейса, отличающийся качественными изменениями в представлении и работе компонента, знак которого является первым компонентом связки.](*<- lang_ru ;;*);;
+		*);;
+	*);;

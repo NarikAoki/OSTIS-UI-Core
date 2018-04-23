@@ -1,0 +1,23 @@
+sc_node_not_relation -> concept_non_atomic_user_interface_component;;
+
+concept_non_atomic_user_interface_component => nrel_main_idtf: [неатомарный компонент пользовательского интерфейса] (*<- lang_ru ;;*);; 
+concept_non_atomic_user_interface_component => nrel_main_idtf: [non-atomic user interface component] (*<- lang_en ;;*);; 
+concept_non_atomic_user_interface_component => nrel_idtf: [множество неатомарных компонентов пользовательского интерфейса] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_non_atomic_user_interface_component;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_user_interface_component;; 
+		*);;
+	=> nrel_main_idtf: [Опр.(неатомарный компонент пользовательского интерфейса)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Неатомарный компонент пользовательского интерфейса — компонент пользовательского интерфейса, состоящий из других компонентов пользовательского интерфейса.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_non_atomic_user_interface_component =>nrel_inclusion: ui_core; ui_of_design_environment;;
+
+ui_of_design_environment => nrel_main_idtf: [пользовательский интерфейс среды проектирования] (*<- lang_ru ;;*);;

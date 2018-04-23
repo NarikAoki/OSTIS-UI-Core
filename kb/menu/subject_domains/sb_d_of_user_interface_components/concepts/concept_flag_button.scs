@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_flag_button;;
+
+concept_flag_button => nrel_main_idtf: [флаговая кнопка] (*<- lang_ru ;;*);; 
+concept_flag_button => nrel_main_idtf: [flag button] (*<- lang_en ;;*);; 
+concept_flag_button => nrel_idtf: [множество флаговых кнопок] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_flag_button;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_sign;; 
+		-> concept_mode;;
+		-> concept_command ;;
+		*);;
+	=> nrel_main_idtf: [Опр.(флаговая кнопка)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Флаговая кнопка — знак команды установки режима.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_icon;;
+
+concept_icon => nrel_main_idtf: [иконка] (*<- lang_ru ;;*);; 
+concept_icon => nrel_main_idtf: [icon] (*<- lang_en ;;*);; 
+concept_icon => nrel_idtf: [множество иконок] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_icon;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_sign;; 
+		-> concept_scg_frame;;     
+		-> nrel_graphic_idtf;;
+		-> command ;;
+		*);;
+	=> nrel_main_idtf: [Опр.(иконка)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Иконка - знак scg-рамки, являющейся графическим идентификатором некоторой команды.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+nrel_graphic_idtf => nrel_main_idtf: [графический идентификатор*] (*<- lang_ru ;;*);; 

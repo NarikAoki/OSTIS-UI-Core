@@ -1,0 +1,30 @@
+sc_node_not_relation -> concept_ostis_system_dialog_window;;
+
+concept_ostis_system_dialog_window => nrel_main_idtf: [диалоговое окно ostis-системы] (*<- lang_ru ;;*);; 
+concept_ostis_system_dialog_window => nrel_main_idtf: [dialog window of ostis-system] (*<- lang_en ;;*);; 
+concept_ostis_system_dialog_window => nrel_idtf: [множество диалоговых окон ostis-системы] (*<- lang_ru ;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_ostis_system_dialog_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_window;; 
+		-> ostis_system;;
+		-> nrel_answer;;
+		-> ui_user;;
+		-> concept_message;;
+		*);;
+	=> nrel_main_idtf: [Опр.(диалоговое окно ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Диалоговое окно ostis-системы — окно ostis-системы, предназначенное для ответа на сообщения пользователя.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_ostis_system_dialog_window  <= nrel_subdividing: ...
+		(*
+		-> concept_modal_window_ostis_system;;
+		-> concept_non_modal_window_ostis_system;;	
+		=> nrel_main_idtf: [Разбиение по признаку возможности закрытия диалогового окна.] (* <-  lang_ru;; *);;
+		*);;

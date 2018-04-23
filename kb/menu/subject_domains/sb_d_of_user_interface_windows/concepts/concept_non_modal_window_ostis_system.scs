@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_non_modal_window_ostis_system;;
+
+concept_non_modal_window_ostis_system => nrel_main_idtf: [немодальное окно ostis-системы] (*<- lang_ru ;;*);; 
+concept_non_modal_window_ostis_system => nrel_main_idtf: [non-modal window of ostis-system] (*<- lang_en ;;*);; 
+concept_non_modal_window_ostis_system => nrel_idtf: [множество немодальных окон ostis-системы] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_non_modal_window_ostis_system;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_ostis_system_dialog_window;; 
+		-> ui_user;;
+		*);;
+	=> nrel_main_idtf: [Опр.(немодальное окно ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Немодальное окно ostis-системы — диалоговое окно ostis-системы, работа с которым может быть прервана пользователем в любой времени.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

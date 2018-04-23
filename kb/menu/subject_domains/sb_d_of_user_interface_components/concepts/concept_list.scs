@@ -1,0 +1,30 @@
+sc_node_not_relation -> concept_list;;
+
+concept_list => nrel_main_idtf: [список] (*<- lang_ru ;;*);; 
+concept_list => nrel_main_idtf: [list] (*<- lang_en ;;*);; 
+concept_list => nrel_idtf: [множество списков] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_list;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_sign;; 
+		-> set;;
+		-> sc_element;;
+		*);;
+	=> nrel_main_idtf: [Опр.(список)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Список — знак множества sc-элементов в указанной или произвольной последовательности.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_list => nrel_inclusion: concept_tree_list; concept_drop_down_list;;
+
+concept_list <= nrel_subdividing: ...
+	(*
+	-> concept_horizontal_list;;
+	-> concept_vertical_list;;
+	=> nrel_main_idtf: [Разбиение по признаку ориентации списка ](* <- lang_ru;;*);;
+	*);;

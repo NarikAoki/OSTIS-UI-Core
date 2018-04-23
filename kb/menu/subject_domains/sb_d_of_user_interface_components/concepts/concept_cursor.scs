@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_cursor;;
+
+concept_cursor => nrel_main_idtf: [курсор] (*<- lang_ru ;;*);; 
+concept_cursor => nrel_main_idtf: [cursor] (*<- lang_en ;;*);; 
+concept_cursor => nrel_idtf: [указатель] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_cursor;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_user_interface_component;;      
+		-> nrel_interaction;;
+		*);;
+	=> nrel_main_idtf: [Опр.(курсор)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Курсор — компонент пользовательского интерфейса, указывающий на компонент пользовательского интерфейса, с которым будет производиться взаимодействие.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+nrel_interaction => nrel_main_idtf: [взаимодействие*](*<- lang_ru ;;*);;

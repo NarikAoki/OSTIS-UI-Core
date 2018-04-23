@@ -1,0 +1,23 @@
+sc_node_not_relation -> concept_group_of_buttons;;
+
+concept_group_of_buttons => nrel_main_idtf: [группа кнопок] (*<- lang_ru ;;*);; 
+concept_group_of_buttons => nrel_main_idtf: [group of buttons] (*<- lang_en ;;*);; 
+concept_group_of_buttons => nrel_idtf: [множество групп кнопок] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_group_of_buttons;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_sign;; 
+		-> set;;
+		-> command ;;
+		*);;
+	=> nrel_main_idtf: [Опр.(группа кнопок)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Группа кнопок — знак множества знаков команд, сформированного по какому-то признаку.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_group_of_buttons => nrel_inclusion: concept_button;;

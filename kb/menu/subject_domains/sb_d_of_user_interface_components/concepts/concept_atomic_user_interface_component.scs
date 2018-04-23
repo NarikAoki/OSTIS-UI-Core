@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_atomic_user_interface_component;;
+
+concept_atomic_user_interface_component => nrel_main_idtf: [атомарный компонент пользовательского интерфейса] (*<- lang_ru ;;*);; 
+concept_atomic_user_interface_component => nrel_main_idtf: [atomic user interface component] (*<- lang_en ;;*);; 
+concept_atomic_user_interface_component => nrel_idtf: [множество атомарных компонентов пользовательского интерфейса] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_atomic_user_interface_component;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_user_interface_component;; 
+		*);;
+	=> nrel_main_idtf: [Опр.(атомарный компонент пользовательского интерфейса)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Атомарный компонент пользовательского интерфейса — компонент пользовательского интерфейса, не содержащий в своём составе других компонентов пользовательского интерфейса.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

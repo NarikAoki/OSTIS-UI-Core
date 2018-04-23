@@ -1,0 +1,22 @@
+sc_node_struct -> sb_d_of_user_interface_windows;;
+
+sb_d_of_user_interface_windows => nrel_main_idtf:
+	[Предметная область окон пользовательского инетрфейса]
+	(* <- lang_ru;; *);
+	[Subject domain of windows of user interface]
+	(* <- lang_en;; *);;
+
+sb_d_of_user_interface_windows <- subject_domain;;
+
+sb_d_of_user_interface_windows -> rrel_maximum_studied_object_class: concept_window;;
+
+sb_d_of_user_interface_windows -> rrel_not_maximum_studied_object_class: 
+	concept_ostis_system_main_window;
+	concept_ostis_system_dialog_window;
+	concept_modal_window_ostis_system;
+	concept_non_modal_window_ostis_system;
+	concept_frame;
+	concept_ostis_system_frame_window;
+	concept_ostis_system_contour_window;
+	concept_integrated_ostis_system_window;
+	concept_window_ostis_system_for_working_with_scp_program;;
