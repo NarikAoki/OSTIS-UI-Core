@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_text_label;;
+
+concept_text_label => nrel_main_idtf: [текстовая метка] (*<- lang_ru ;;*);; 
+concept_text_label => nrel_main_idtf: [text label] (*<- lang_en ;;*);; 
+concept_text_label => nrel_idtf: [множество текстовых меток] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_text_label;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_sign;; 
+		-> concept_scg_frame;;     
+		-> nrel_idtf;;
+		->command ;;
+		*);;
+	=> nrel_main_idtf: [Опр.(текстовая метка)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Текстовая метка — знак scg-рамки, являющейся текстовым идентификатором некоторой команды.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_scg_frame => nrel_main_idtf: [scg-рамка] (*<- lang_ru ;;*);;
+concept_scg_frame => nrel_idtf: [scg-контур] (*<- lang_ru ;;*);;

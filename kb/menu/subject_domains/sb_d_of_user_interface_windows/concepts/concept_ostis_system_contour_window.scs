@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_ostis_system_contour_window;;
+
+concept_ostis_system_contour_window => nrel_main_idtf: [контурное окно ostis-системы] (*<- lang_ru ;;*);; 
+concept_ostis_system_contour_window => nrel_main_idtf: [frame window of ostis-system] (*<- lang_en ;;*);; 
+concept_ostis_system_contour_window => nrel_idtf: [множество контурных окон ostis-системы] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_ostis_system_contour_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_window;; 
+		-> ostis_system;;
+		-> concept_scg_frame;;
+		-> concept_screen;;
+		*);;
+	=> nrel_main_idtf: [Опр.(контурное окно ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Контурное окно ostis-системы — scg-контур, являющийся окном ostis-системы, который при этом отображается на экране и которым можно манипулировать.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

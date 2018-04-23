@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_window_ostis_system_for_working_with_scp_program;;
+
+concept_window_ostis_system_for_working_with_scp_program => nrel_main_idtf: [окно ostis-системы для работы с scp-программой] (*<- lang_ru ;;*);; 
+concept_window_ostis_system_for_working_with_scp_program => nrel_main_idtf: [integrated window of ostis-system] (*<- lang_en ;;*);; 
+concept_window_ostis_system_for_working_with_scp_program => nrel_idtf: [множество окон ostis-системы для работы с scp-программой] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_window_ostis_system_for_working_with_scp_program;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_window;; 
+		-> ostis_system;;
+		-> concept_ostis_system_contour_window;;
+		-> concept_message;;
+		-> nrel_child_window_ostis_system;;
+		*);;
+	=> nrel_main_idtf: [Опр.(окно ostis-системы для работы с scp-программой)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Окно ostis-системы для работы с scp-программой  — контурное окно ostis-системы,  состоящее из двух дочерних окон*, одно из которых локализует текст некоторой scp-программы, а второе – sc-текст на внешнем языке, соответствующий результатам выполнения некоторой последовательности операторов scp-программы.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+nrel_child_window_ostis_system => nrel_main_idtf: [дочернее окно ostis-системы*] (*<- lang_ru ;;*) ;;

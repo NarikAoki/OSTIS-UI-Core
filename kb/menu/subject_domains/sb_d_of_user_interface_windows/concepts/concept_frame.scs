@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_frame;;
+
+concept_frame => nrel_main_idtf: [фрейм] (*<- lang_ru ;;*);; 
+concept_frame => nrel_main_idtf: [frame] (*<- lang_en ;;*);; 
+concept_frame => nrel_idtf: [множество фреймов] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_frame;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_ostis_system_dialog_window;; 
+		-> ui_user;;
+		-> ostis_system;;
+		*);;
+	=> nrel_main_idtf: [Опр.(фрейм)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Фрейм — окно ostis-системы, которое допускается перемещать по экрану и размеры которого могут быть изменены в любой момент времени.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

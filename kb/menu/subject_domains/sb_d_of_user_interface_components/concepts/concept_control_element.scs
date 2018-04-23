@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_control_element;;
+
+concept_control_element => nrel_main_idtf: [элемент управления] (*<- lang_ru ;;*);; 
+concept_control_element => nrel_main_idtf: [control element] (*<- lang_en ;;*);; 
+concept_control_element => nrel_idtf: [множество элементов управления] (*<- lang_ru ;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_control_element;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_user_interface_component ;;
+		-> concept_screen;;
+		-> sc_element;;
+		-> concept_sign;;
+		*);;
+	=> nrel_main_idtf: [Опр.(элемент управления)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Элемент управления - компонент пользовательского интерфейса, с помощью которого пользователь имеет возможность повлиять на состояние как отображаемых на экране объектов, так и на состояние sc-элементов, знаки которых и скрываются за каждым из этих объектов.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_control_element => nrel_inclusion: concept_button; concept_list;concept_label; concept_text_component;concept_table_component; concept_slider;concept_completeness_indicator;;
+
+concept_completeness_indicator => nrel_main_idtf: [показатель полноты выполнения процесса] (*<- lang_ru ;;*);; 
+concept_slider => nrel_main_idtf:[ползунок] (*<- lang_ru ;;*);; 
+concept_table_component => nrel_main_idtf: [табличный компонент] (*<- lang_ru ;;*);; 

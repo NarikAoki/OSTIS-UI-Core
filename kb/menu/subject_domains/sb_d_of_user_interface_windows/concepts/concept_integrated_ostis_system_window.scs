@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_integrated_ostis_system_window;;
+
+concept_integrated_ostis_system_window => nrel_main_idtf: [интегрированное окно ostis-системы] (*<- lang_ru ;;*);; 
+concept_integrated_ostis_system_window => nrel_main_idtf: [integrated window of ostis-system] (*<- lang_en ;;*);; 
+concept_integrated_ostis_system_window => nrel_idtf: [множество интегрированных окон ostis-системы] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_integrated_ostis_system_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_window;; 
+		-> ostis_system;;
+		-> concept_ostis_system_contour_window;;
+		-> concept_message;;
+		-> concept_systemic_action;;
+		-> concept_elementary_user_action_on_the_ostis_system_window;;
+		*);;
+	=> nrel_main_idtf: [Опр.(интегрированное окно ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Интегрированное окно ostis-системы — контурное окно ostis-системы,  предполагающее отображение одного или нескольких сообщений ostis-системы и локализующее результаты выполнения пользовательских и системных действий в рамках этого же окна посредством использования цветового кодирования.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+statement -> ...
+	(*
+	-> rrel_key_sc_element: concept_integrated_ostis_system_window;;
+     => nrel_main_idtf: [Утв. (интегрированное окно ostis-системы).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [В рамках данного окна различными цветами выделяются:
+1) последнее пользовательское действие (например, добавлением им некоторых узлов или sc-коннекторов);
+2) последний удалённый пользователем фрагмент базы знаний, ранее отображённый в этом окне;
+3) последний удалённый системой фрагмент базы знаний, ранее отображённый в этом окне;
+4) последнее системное действие (например, добавление некоторых фрагментов базы знаний, соответствующих результату выполнения некоторой команды).
+5) фрагмент базы знаний, изначально отображённый в данном окне и дополняемый новыми фрагментами базы знаний, не относящимися к последним шагам ostis-системы и пользователя.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axim: sb_d_of_user_interface_windows ;;
+	*);;
+
