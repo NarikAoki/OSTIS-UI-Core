@@ -1,0 +1,40 @@
+sc_node_norole_relation -> nrel_error_message;;
+
+nrel_error_message => nrel_main_idtf: [сообщение об ошибке*](*<- lang_ru ;;*);;
+nrel_error_message => nrel_idtf: [быть сообщением об ошибке*](*<- lang_ru ;;*);;
+nrel_error_message => nrel_main_idtf: [error message](*<- lang_en ;;*);;
+
+binary_relation -> nrel_error_message;;
+oriented_relation -> nrel_error_message;;
+antitransitive_relation -> nrel_error_message;;
+antisymmetric_relation -> nrel_error_message;;
+antireflexive_relation -> nrel_error_message;;
+
+nrel_error_message=> nrel_first_domain: concept_imperative_message;;						
+nrel_error_message => nrel_second_domain: concept_narrative_message;;
+nrel_error_message => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_imperative_message;;
+		-> concept_narrative_message;;
+		*);;
+	*);;
+
+definition -> ...	
+	(*
+	-> rrel_key_sc_element: nrel_error_message;;
+	<= nrel_using_constants: ...
+		(*
+        	-> binary_relation;;
+		-> oriented_relation;;
+		-> concept_imperative_message;;
+      	-> nrel_sender;;
+      	-> concept_narrative_message;;
+		*);;
+	=> nrel_main_idtf: [Опр.(сообщение об ошибке*)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Сообщение об ошибке* — бинарное ориентированное отношение, первым компонентом связок которого является знак сформулированного в виде императивного сообщения запроса отправителя*, а вторым компонентом связок — знак повествовательного сообщения, представляющего собой сформированную некорректную структуру по итогам обработки запроса.](*<- lang_ru ;;*);;
+		*);;
+	*);;

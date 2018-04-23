@@ -1,0 +1,46 @@
+sc_node_not_relation -> concept_effector_ostis_system_message;;
+
+concept_effector_ostis_system_message => nrel_main_idtf: [эффекторное сообщение ostis-системы](*<- lang_ru ;;*);;
+concept_effector_ostis_system_message => nrel_idtf: [множество эффекторных сообщений ostis-системы](*<- lang_ru ;;*);;
+concept_effector_ostis_system_message => nrel_main_idtf: [effector message of ostis-system](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_effector_ostis_system_message;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_message;;   
+		-> ostis_system;;
+		-> ui_user;;
+		-> nrel_argument;;
+		-> concept_initiated_action;;
+		-> concept_user_interface_component;;
+		-> concept_external_language;;
+		-> concept_context;;
+		*);;
+	=> nrel_main_idtf: [Опр.(эффекторное сообщение ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Эффекторное сообщение ostis-системы — сообщение ostis-системы, инициируемое самой ostis-системой при возникновении некоторых ситуаций.
+Такими ситуациями являются:
+
+- ситуации, возникающие при анализе деятельности самого пользователя  
+
+Например, задание аргументов, не соответствующих типу инициируемого действия или появление подсказок при использовании компонентов пользовательского интерфейса.
+
+- ситуации, возникающие при анализе синтаксиса текстов внешних языков
+
+Например, неполнота сформированного предложения на внешнем языке или использование конструкций, нехарактерных или некорректно использованных в контексте отдельно взятого внешнего языка.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_effector_ostis_system_message <= nrel_subdividing: ...
+	(* 
+	-> concept_inner_ostis_system_message;;
+	->concept_external_ostis_system_message;;
+ 	=> nrel_main_idtf: [Разбиение по признаку адресата сообщения](*<- lang_ru ;;*);;
+	*);;
+
+concept_external_language => nrel_main_idtf: [внешний язык](*<- lang_ru ;;*);;
+concept_initiated_action => nrel_main_idtf: [инициируемое действие](*<- lang_ru ;;*);;
+concept_context => nrel_main_idtf: [контекст](*<- lang_ru ;;*);;

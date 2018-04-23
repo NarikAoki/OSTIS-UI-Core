@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_receptor_systemic_action;;
+
+concept_receptor_systemic_action => nrel_main_idtf: [рецепторное системное действие](*<- lang_ru ;;*);;
+concept_receptor_systemic_action => nrel_idtf: [множество рецепторных системных действий](*<- lang_ru ;;*);;
+concept_receptor_systemic_action => nrel_main_idtf: [receptor systemic action](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_receptor_systemic_action;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_systemic_action;;
+		-> ui_user;;
+		-> ostis_system;;
+		-> concept_control_element;;
+		*);;
+	=> nrel_main_idtf: [Опр.(рецепторное системное действие)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Рецепторное системное действие — системное действие, причиной инициирования которого является взаимодействие пользователя ostis-системы с некоторым элементом управления пользовательского интерфейса.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_systemic_action => nrel_inclusion: concept_action_of_command_initiation;;

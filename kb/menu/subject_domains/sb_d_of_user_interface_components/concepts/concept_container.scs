@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_container;;
+
+concept_container => nrel_main_idtf: [контейнер](*<- lang_ru ;;*);;
+concept_container => nrel_idtf: [множество контейнеров](*<- lang_ru ;;*); [container](*<- lang_en ;;*);;
+concept_user_interface_component => nrel_main_idtf: [компонент пользовательского интерфейса] (*<- lang_ru ;;*);;
+
+definition -> ...
+	(*
+	 -> rrel_key_sc_element:concept_container;;
+	 <= nrel_sc_text_translation:...
+		(*
+		 ->rrel_example:[Под контейнером понимается знак компонента пользовательского интерфейса, задача которого состоит в размещении набора компонентов, включенных в его состав.](*<- lang_ru ;;*);;
+		*);;
+	 => nrel_main_idtf:[Опр.(контейнер)](*<- lang_ru ;;*);;
+	 <= nrel_using_constants:...
+			(*
+				->concept_sign;;
+				->nrel_inclusion;;
+				->concept_user_interface_component;;
+				->user_interface;;
+			*);;
+	*);;
+
+statement-> ...
+		(*
+		-> rrel_key_sc_element: concept_container;;
+		-> rrel_key_sc_element: nrel_movement;;
+		-> rrel_key_sc_element: concept_screen;;
+        	=> nrel_main_idtf: [Утв.(контейнер, движение*, экран)](*<- lang_ru ;;*);;
+		<= nrel_sc_text_translation: ...
+			(*
+ 			-> [Контейнер может передвигаться в пределах экрана.](*<- lang_ru ;;*);;
+			*);;
+		<- rrel_axiom:sb_d_of_user_interface_components;;
+		*);;
+
+concept_container => nrel_inclusion:
+	concept_menu;
+	concept_window;
+	concept_tabbed_panel;;
+
+
+
+user_iterface => nrel_main_idtf: [пользовательский интерфейс] (*<- lang_ru ;;*);;
+concept_tabbed_panel => nrel_main_idtf: [панель со вкладками](*<- lang_ru ;;*);;

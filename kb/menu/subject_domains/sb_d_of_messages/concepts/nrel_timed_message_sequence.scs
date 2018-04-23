@@ -1,0 +1,36 @@
+sc_node_norole_relation -> nrel_timed_message_sequence;;
+
+nrel_timed_message_sequence => nrel_main_idtf: [временная последовательность сообщений*](*<- lang_ru ;;*);;
+nrel_timed_message_sequence => nrel_idtf: [непостоянная последовательность сообщений*](*<- lang_ru ;;*);;
+nrel_timed_message_sequence => nrel_main_idtf: [time sequence of messages](*<- lang_en ;;*);;
+
+binary_relation -> nrel_timed_message_sequence;;
+oriented_relation -> nrel_timed_message_sequence;;
+antitransitive_relation -> nrel_timed_message_sequence;;
+antisymmetric_relation -> nrel_timed_message_sequence;;
+antireflexive_relation -> nrel_timed_message_sequence;;
+
+nrel_timed_message_sequence=> nrel_first_domain: concept_message;;						
+nrel_timed_message_sequence => nrel_second_domain: concept_message;;
+nrel_timed_message_sequence => nrel_definitional_domain: concept_message;;
+
+definition -> ...	
+	(*
+	-> rrel_key_sc_element: nrel_timed_message_sequence;;
+	<= nrel_using_constants: ...
+		(*
+		-> nrel_message_sequence;;
+		-> ostis_system;;
+		-> concept_message;;
+		*);;
+	=> nrel_main_idtf: [Опр.(временная последовательность сообщений*)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Временная последовательность сообщений* — последовательность сообщений*, в которой порядок следования сообщений ostis-системы зависит от времени их отправления.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+nrel_timed_message_sequence => nrel_inclusion:
+        nrel_answer;
+        nrel_task_clarifying_message;
+        nrel_error_message;;

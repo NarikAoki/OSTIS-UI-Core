@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_action_of_ontology_equalization;;
+
+concept_action_of_ontology_equalization => nrel_main_idtf: [действие выравнивания онтологий](*<- lang_ru ;;*);;
+concept_action_of_ontology_equalization => nrel_idtf: [множество действий выравнивания онтологий](*<- lang_ru ;;*);;
+concept_action_of_ontology_equalization => nrel_main_idtf: [action of ontology equalization](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_action_of_ontology_equalization;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_action_of_knowledge_base_integration;;
+		-> semantic_neighborhood;;
+		-> subject_domain;;
+		-> ontology;;
+		*);;
+	=> nrel_main_idtf: [Опр.(действие выравнивания онтологий)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие выравнивания онтологий — действие интеграции базы знаний, направленное на уточнение (сужение) семантической окрестности понятий предметной области путём соотнесения этих понятий с некоторым множеством онтологий этой предметной области.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

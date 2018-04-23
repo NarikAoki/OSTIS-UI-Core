@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_effector_systemic_action;;
+
+concept_effector_systemic_action => nrel_main_idtf: [эффекторное системное действие](*<- lang_ru ;;*);;
+concept_effector_systemic_action => nrel_idtf: [множество эффекторных системных действий](*<- lang_ru ;;*);;
+concept_effector_systemic_action => nrel_main_idtf: [effector systemic action](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_effector_systemic_action;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_systemic_action;;
+		-> nrel_event;;      
+		-> sc_memory;;
+		*);;
+	=> nrel_main_idtf: [Опр.(эффекторное системное действие)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Эффекторное системное действие — системное действие, причиной инициирования которого является возникновение некоторого события в sc-памяти.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_systemic_action => nrel_inclusion:
+	concept_action_of_translation_into_an_external_language;
+	concept_receptor_systemic_action;;
