@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_ostis_system_main_window;;
+
+concept_ostis_system_main_window => nrel_main_idtf: [главное окно ostis-системы] (*<- lang_ru ;;*);; 
+concept_ostis_system_main_window => nrel_main_idtf: [main window of ostis-system] (*<- lang_en ;;*);; 
+concept_ostis_system_main_window => nrel_idtf: [множество главных окон ostis-системы] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_ostis_system_main_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_window;; 
+		-> ostis_system;;
+		*);;
+	=> nrel_main_idtf: [Опр.(главное окно ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Главное окно ostis-системы — окно ostis-системы, которое не является дочерним ни для одного из отображаемых на экране окон.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+statement -> ...
+		(*
+		-> rrel_key_sc_element: ostis_system;;
+		-> rrel_key_sc_element: ui_user;;
+		-> rrel_key_sc_element: concept_ostis_system_main_window;;
+        	=> nrel_main_idtf: [Утв. (главное окно ostis-системы, пользователь, ostis-система).](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation: ...
+			(*
+ 			-> [В рамках одного сеанса диалога ostis-системы с пользователем возможно существование только одного главного окна.](*<- lang_ru;;*);;
+			*);;
+		<- rrel_axiom: sb_d_of_user_interface_windows;;
+		*);;
+
+statement -> ...
+		(*
+		-> rrel_key_sc_element: concept_ostis_system_main_window ;;
+		-> rrel_key_sc_element: concept_ostis_system_contour_window;;
+        	=> nrel_main_idtf: [Утв. (главное окно ostis-системы, контурное окно ostis-системы).](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation: ...
+			(*
+ 			-> [По признаку содержимого главное окно ostis-системы может быть только контурным.](*<- lang_ru;;*);;
+			*);;
+		<- rrel_axiom: sb_d_of_user_interface_windows ;;
+		*);;
+
+statement -> ...
+		(*
+		-> rrel_key_sc_element: concept_ostis_system_main_window;;
+        	=> nrel_main_idtf: [Утв. (главное окно ostis-системы).](*<- lang_ru;;*);;
+		<= nrel_sc_text_translation: ...
+			(*
+ 			-> [Главное окно ostis-системы невозможно удалить или свернуть.](*<- lang_ru;;*);;
+			*);;
+		<- rrel_axiom: sb_d_of_user_interface_windows ;;
+		*);;

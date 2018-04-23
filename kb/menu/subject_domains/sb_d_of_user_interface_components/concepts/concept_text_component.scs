@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_text_component;;
+
+concept_text_component => nrel_main_idtf: [текстовый компонент] (*<- lang_ru ;;*);; 
+concept_text_component => nrel_main_idtf: [text component] (*<- lang_en ;;*);; 
+concept_text_component => nrel_idtf: [множество текстовых компонентов] (*<- lang_ru ;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_text_component;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_sign ;;
+		-> file ;;
+		*);;
+	=> nrel_main_idtf: [Опр.(текстовый компонент)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Текстовый компонент — знак файла, содержимое которого можно редактировать ](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_text_component => nrel_inclusion: concept_text_field; concept_text_area;;
+
+concept_text_field => nrel_main_idtf:[текстовое поле] (*<- lang_ru ;;*);; 
+concept_text_area => nrel_main_idtf: [текстовая область] (*<- lang_ru ;;*);; 

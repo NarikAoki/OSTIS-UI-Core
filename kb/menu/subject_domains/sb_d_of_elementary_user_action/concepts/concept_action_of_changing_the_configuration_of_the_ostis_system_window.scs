@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_action_of_changing_the_configuration_of_the_ostis_system_window;;
+	
+concept_action_of_changing_the_configuration_of_the_ostis_system_window  => nrel_main_idtf: [действие изменения конфигурации окна ostis-системы] (*<- lang_ru ;;*);;
+concept_action_of_changing_the_configuration_of_the_ostis_system_window  => nrel_idtf: [изменение конфигурации окна ostis-системы] (*<- lang_ru ;;*);;
+concept_action_of_changing_the_configuration_of_the_ostis_system_window => nrel_main_idtf: [action of changing the configuration of the ostis system window] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие изменения конфигурации окна ostis-системы)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_changing_the_configuration_of_the_ostis_system_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_the_ostis_system_window;;
+		-> concept_form;;
+		-> concept_location;;
+		-> concept_window;;
+		-> ostis_system;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие изменения конфигурации окна ostis-системы — элементарное пользовательское действие над окном ostis-системы, связанное с изменением формы и расположения окна ostis-системы.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+concept_action_of_changing_the_configuration_of_the_ostis_system_window  => nrel_inclusion: concept_action_of_moving_ostis_system_window; concept_action_of_resizing_ostis_window;;	
+
+concept_form => nrel_main_idtf: [форма] (*<- lang_ru ;;*);; 
+concept_location => nrel_main_idtf: [расположение] (*<- lang_ru ;;*);; 

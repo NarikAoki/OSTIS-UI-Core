@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_modal_window_ostis_system;;
+
+concept_modal_window_ostis_system => nrel_main_idtf: [модальное окно ostis-системы] (*<- lang_ru ;;*);; 
+concept_modal_window_ostis_system => nrel_main_idtf: [modal window of ostis-system] (*<- lang_en ;;*);; 
+concept_modal_window_ostis_system => nrel_idtf: [множество модальных окон ostis-системы] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_modal_window_ostis_system;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_ostis_system_dialog_window;; 
+		-> ostis_system;;
+		-> ui_user;;
+		-> concept_window;;
+		*);;
+	=> nrel_main_idtf: [Опр.(модальное окно ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Модальное окно ostis-системы — диалоговое окно ostis-системы, которое блокирует работу пользователя с другими окнами ostis-системы до тех пор, пока пользователь не закончит работу с этим окном.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

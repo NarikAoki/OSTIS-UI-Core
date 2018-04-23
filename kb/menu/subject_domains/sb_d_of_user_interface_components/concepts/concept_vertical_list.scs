@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_vertical_list;;
+
+concept_vertical_list => nrel_main_idtf: [вертикальный список] (*<- lang_ru ;;*);; 
+concept_vertical_list => nrel_main_idtf: [vertical list] (*<- lang_en ;;*);; 
+concept_vertical_list => nrel_idtf: [множество вертикальных списков] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_vertical_list;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_list;; 
+		-> concept_user_interface_element;;
+		-> nrel_vertically;;
+		*);;
+	=> nrel_main_idtf: [Опр.(вертикальный список)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Вертикальный список — список, визуализированные элементы которого выстроены по вертикали.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

@@ -1,0 +1,28 @@
+sc_node_not_relation ->	concept_action_of_undoing_the_last_elementary_user_action;;
+
+concept_action_of_undoing_the_last_elementary_user_action => nrel_main_idtf: [действие отмены последнего элементарного пользовательского действия] (*<- lang_ru ;;*);;
+concept_action_of_undoing_the_last_elementary_user_action  => nrel_idtf: [отмена последнего элементарного пользовательского действия] (*<- lang_ru ;;*);;
+concept_action_of_undoing_the_last_elementary_user_action  => nrel_main_idtf: [action of undoing the last elementary user action] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие отмены последнего элементарного пользовательского действия)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_undoing_the_last_elementary_user_action;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_entity;;
+		-> nrel_result;;
+		-> sc_memory;;
+		-> concept_action_delete;;
+		-> concept_action_specification;;
+		-> rrel_last;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие отмены последнего элементарного пользовательского действия — элементарное пользовательское действие над сущностью, которое удаляет из sc-памяти спецификацию последнего инициированного элементарного пользовательского действия и результат* его выполнения.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+ 
+concept_action_delete => nrel_main_idtf: [дейсвие удаления] (*<- lang_ru ;;*);; 
+rrel_last => nrel_main_idtf: [быть последним'] (*<- lang_ru ;;*);; 
+concept_action_specification => nrel_main_idtf: [спецификация действия] (*<- lang_ru ;;*);;

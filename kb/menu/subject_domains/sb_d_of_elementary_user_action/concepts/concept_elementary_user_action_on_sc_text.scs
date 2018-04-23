@@ -1,0 +1,24 @@
+sc_node_not_relation ->	concept_elementary_user_action_on_sc_text;;
+
+concept_elementary_user_action_on_sc_text => nrel_main_idtf: [элементарное пользовательское действие над sc-текстом] (*<- lang_ru ;;*);;
+concept_elementary_user_action_on_sc_text  => nrel_idtf: [элементарное действие над sc-текстом] (*<- lang_ru ;;*);;
+concept_elementary_user_action_on_sc_text  => nrel_main_idtf: [elementary user action on sc-text] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(элементарное пользовательское действие над sc-текстом)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_elementary_user_action_on_sc_text;;
+	<= nrel_using_constants: ...
+		(*
+		-> set;;
+		-> concept_sc_text;;
+		-> nrel_argument;;
+		-> concept_sign;;
+		*);;	
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Элементарное пользовательское действие над sc-текстом — элементарное пользовательское действие над множеством сущностей, аргументом которого является знак sc-текста.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+concept_elementary_user_action_on_sc_text  => nrel_inclusion: concept_sc_text_delete_action; concept_sc_text_copy_action; concept_sc_text_insertion_action;	concept_sc_text_select_action;;

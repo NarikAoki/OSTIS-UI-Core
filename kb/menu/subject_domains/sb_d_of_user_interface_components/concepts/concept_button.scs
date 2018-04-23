@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_button;;
+
+concept_button => nrel_main_idtf: [кнопка] (*<- lang_ru ;;*);; 
+concept_button => nrel_main_idtf: [button] (*<- lang_en ;;*);; 
+concept_button => nrel_idtf: [множество кнопок] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_button;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_sign;;      
+		-> command;;
+		*);;
+	=> nrel_main_idtf: [Опр.(кнопка)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Кнопка - знак некоторой команды.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+statement -> ...      
+	(*
+	<- rrel_axiom: sb_d_of_user_interface_components;;
+	-> rrel_key_sc_element: concept_button; user_interface; concept_user_interface_element; concept_computer_program;;
+	=> nrel_main_idtf: [Утв.(кнопка, элемент пользовательского интерфейса, пользовательский интерфейс, компьютерная программа)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Кнопка - базовый элемент интерфейса компьютерных программ.](*<- lang_ru ;;*);; 
+		*);;
+	*);;
+
+concept_button => nrel_inclusion: concept_selector_button; concept_checbox_button; concept_radio_button;; 
+
+concept_selector_button => nrel_main_idtf: [кнопка-селектор] (*<- lang_ru ;;*);; 
+concept_checbox_button => nrel_main_idtf: [чекбокс-кнопка] (*<- lang_ru ;;*);; 
+concept_radio_button => nrel_main_idtf: [радио-кнопка] (*<- lang_ru ;;*);;   
+nrel_press_button => nrel_main_idtf: [нажатие*] (*<- lang_ru ;;*);; 
+concept_bounded_area => nrel_main_idtf: [ограниченная область](*<- lang_ru ;;*);; 
+concept_user_interface_element => nrel_main_idtf : [элемент пользовательского интерфейса](*<- lang_ru ;;*);;
+concept_computer_program => nrel_main_idtf : [компьютерная программа](*<- lang_ru ;;*);;
