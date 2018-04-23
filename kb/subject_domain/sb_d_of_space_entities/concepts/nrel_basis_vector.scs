@@ -1,0 +1,45 @@
+sc_node_norole_relation -> nrel_basis_vector;;
+
+nrel_basis_vector => nrel_main_idtf: 
+	[базисный вектор*] (* <- lang_ru;; *);
+	[basis vector*] (* <- lang_en;; *);; 
+nrel_basis_vector => nrel_idtf: [быть базисным вектором*] (*<- lang_ru ;;*);;
+
+nrel_basis_vector <- antireflexive_relation;;
+nrel_basis_vector <- antitransitive_relation;;
+nrel_basis_vector <- antisymmetric_relation;;
+nrel_basis_vector <- norole_relation;;
+nrel_basis_vector <- binary_relation;;
+nrel_basis_vector <- oriented_relation;;
+
+nrel_basis_vector => nrel_first_domain: concept_coordinate_system;;
+nrel_basis_vector => nrel_second_domain: concept_vector;;
+nrel_basis_vector => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_coordinate_system;
+		concept_vector;;
+		*);;
+	*);;
+
+nrel_basis_vector <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(базисный вектор*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_coordinate_system;
+		concept_vector;
+		nrel_axis;
+		nrel_coordinate;
+		binary_relation;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Базисный вектор* — бинарное отношение, первым компонентом связок которого является знак системы координат, а вторым – знак вектора, задающего положительное направление оси координат*.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+concept_vector => nrel_main_idtf: [вектор] (*<- lang_ru ;;*);;
+

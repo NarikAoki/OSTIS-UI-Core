@@ -1,0 +1,33 @@
+sc_node_norole_relation -> nrel_be_right;;
+
+nrel_be_right => nrel_main_idtf: 
+	[быть справа*] (* <- lang_ru;; *);
+	[be right*] (* <- lang_en;; *);; 
+nrel_be_right => nrel_idtf: [располагаться справа*] (*<- lang_ru ;;*);;
+
+nrel_be_right <- antireflexive_relation;;
+nrel_be_right <- antitransitive_relation;;
+nrel_be_right <- antisymmetric_relation;;
+nrel_be_right <- norole_relation;;
+nrel_be_right <- binary_relation;;
+nrel_be_right <- oriented_relation;;
+
+nrel_be_right => nrel_first_domain: concept_space_entity;;
+nrel_be_right => nrel_second_domain: concept_space_entity;;
+nrel_be_right => nrel_definitional_domain: concept_space_entity;;
+
+nrel_be_right <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(быть справа*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> binary_relation;
+		oriented_relation;
+		concept_space_entity;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Быть справа* — бинарное ориентированное отношение, вторым компонентом связок которого является знак пространственной сущности, располагающаяся с правой стороны от пространственной сущности, знак которой является первым компонентом связки.](*<- lang_ru ;;*);;
+	*);;
+*);;

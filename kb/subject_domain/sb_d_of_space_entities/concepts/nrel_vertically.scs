@@ -1,0 +1,37 @@
+sc_node_norole_relation -> nrel_vertically;;
+
+nrel_vertically => nrel_main_idtf: 
+	[по вертикали*] (* <- lang_ru;; *);
+	[vertically*] (* <- lang_en;; *);; 
+nrel_vertically => nrel_idtf: [располагаться по вертикали*] (*<- lang_ru ;;*);;
+
+nrel_vertically <- norole_relation;;
+nrel_vertically <- unary_relation;;
+nrel_vertically <- oriented_relation;;
+
+nrel_vertically => nrel_first_domain: concept_space_entity;;
+nrel_vertically => nrel_definitional_domain: concept_space_entity;;
+
+nrel_vertically <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(по вертикали*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> unary_relation;
+		concept_space_entity;
+		nrel_perpendicularity;
+		nrel_be_more;
+		nrel_side;
+		nrel_rectangle_form;
+		concept_horizon_line;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [По вертикали* — унарное отношение, компонентом связки которого является пространственная сущность, имеющая прямоугольную форму*, большая* из сторон* которой перпендикулярна линии горизонта.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+nrel_be_more => nrel_main_idtf: [быть больше*] (*<- lang_ru ;;*);;
+concept_horizon_line => nrel_main_idtf: [линия горизонта] (*<- lang_ru ;;*);;
+nrel_side => nrel_main_idtf: [сторона*] (*<- lang_ru ;;*);;

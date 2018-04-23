@@ -1,0 +1,43 @@
+sc_node_norole_relation -> nrel_axis;;
+
+nrel_axis => nrel_main_idtf: 
+	[ось*] (* <- lang_ru;; *);
+	[axis*] (* <- lang_en;; *);; 
+nrel_axis => nrel_idtf: [осевая прямая*] (*<- lang_ru ;;*);;
+
+nrel_axis <- antireflexive_relation;;
+nrel_axis <- antitransitive_relation;;
+nrel_axis <- antisymmetric_relation;;
+nrel_axis <- norole_relation;;
+nrel_axis <- binary_relation;;
+nrel_axis <- oriented_relation;;
+
+nrel_axis => nrel_first_domain: concept_coordinate_system;;
+nrel_axis => nrel_second_domain: concept_straight_line;;
+nrel_axis => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_coordinate_system;
+		concept_straight_line;;
+		*);;
+	*);;
+
+nrel_axis <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(ось*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_coordinate_system;
+		concept_straight_line;
+		nrel_basis_vector;
+		binary_relation;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Ось* — бинарное отношение, связывающее некоторую систему координат и прямую, на которой задан базисный вектор*.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+concept_straight_line => nrel_main_idtf: [прямая] (*<- lang_ru ;;*);;

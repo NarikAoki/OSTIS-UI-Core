@@ -1,0 +1,33 @@
+sc_node_norole_relation -> nrel_be_on_top;;
+
+nrel_be_on_top => nrel_main_idtf: 
+	[быть вверху*] (* <- lang_ru;; *);
+	[be on top*] (* <- lang_en;; *);; 
+nrel_be_on_top => nrel_idtf: [располагаться вверху*] (*<- lang_ru ;;*);;
+
+nrel_be_on_top <- antireflexive_relation;;
+nrel_be_on_top <- antitransitive_relation;;
+nrel_be_on_top <- antisymmetric_relation;;
+nrel_be_on_top <- norole_relation;;
+nrel_be_on_top <- binary_relation;;
+nrel_be_on_top <- oriented_relation;;
+
+nrel_be_on_top => nrel_first_domain: concept_space_entity;;
+nrel_be_on_top => nrel_second_domain: concept_space_entity;;
+nrel_be_on_top => nrel_definitional_domain: concept_space_entity;;
+
+nrel_be_on_top <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(быть вверху*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> binary_relation;
+		oriented_relation;
+		concept_space_entity;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Быть вверху* — бинарное ориентированное отношение, вторым компонентом связок которого является знак пространственной сущности, располагающаяся выше пространственной сущности, знак которой является первым компонентом связки.](*<- lang_ru ;;*);;
+	*);;
+*);;

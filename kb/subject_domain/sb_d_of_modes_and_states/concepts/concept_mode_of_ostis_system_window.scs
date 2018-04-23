@@ -1,0 +1,23 @@
+sc_node_not_relation -> concept_mode_of_ostis_system_window;;
+
+concept_mode_of_ostis_system_window => nrel_main_idtf: 
+	[режим окна ostis-системы] (* <- lang_ru;; *);
+	[mode of ostis system window] (*<- lang_en;; *);;  
+concept_mode_of_ostis_system_window => nrel_idtf: [множество режимов окна ostis-системы] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_mode_of_ostis_system_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_mode; 
+		concept_window;    
+		ostis_system;
+		nrel_object_of_action;;
+		*);;
+	=> nrel_main_idtf: [Опр.(режим окна ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Режим окна ostis-системы — режим, объектом воздействия которого является конкретное окно ostis-системы.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

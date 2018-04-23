@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_thread_layout_manager;;
+
+concept_thread_layout_manager => nrel_main_idtf: 
+	[потоковый менеджер компоновки] (* <- lang_ru;; *);
+	[boundary thread manager] (* <- lang_en;; *);; 
+concept_thread_layout_manager => nrel_idtf: [множество потоковых менеджеров компоновки] (*<- lang_ru ;;*);; 
+
+concept_thread_layout_manager <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(потоковый менеджер компоновки)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_layout_manager;
+		concept_container;
+		concept_user_interface_component;
+		concept_location;
+		nrel_orientation;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Поточный менеджер компоновки — менеджер компоновки, размещающий компоненты пользовательского интерфейса по порядку в том же направлении, что и ориентация контейнера (слева направо по умолчанию).](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+nrel_orientation => nrel_main_idtf: [ориентация*](*<- lang_ru ;;*);;

@@ -1,0 +1,23 @@
+sc_node_not_relation -> concept_mode_of_russian_language_identification;;
+
+concept_mode_of_russian_language_identification => nrel_main_idtf: 
+	[режим русскоязычной идентификации] (* <- lang_ru;; *);
+	[mode of russian language identification] (*<- lang_en;; *);;  
+concept_mode_of_russian_language_identification => nrel_idtf: [множество режимов русскоязычной идентификации] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_mode_of_russian_language_identification;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_mode;    
+		lang_ru;
+		nrel_identification_language;;
+		*);;
+	=> nrel_main_idtf: [Опр.(режим русскоязычной идентификации)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Режим русскоязычной идентификации — режим, назначение которого состоит в установке Русского языка идентификации.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+

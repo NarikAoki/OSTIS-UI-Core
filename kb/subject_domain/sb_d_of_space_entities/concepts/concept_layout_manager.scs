@@ -1,0 +1,32 @@
+sc_node_not_relation -> concept_layout_manager;;
+
+concept_layout_manager => nrel_main_idtf: 
+	[менеджер компоновки] (* <- lang_ru;; *);
+	[layout manager] (* <- lang_en;; *);; 
+concept_layout_manager => nrel_idtf: [множество менеджеров компоновки] (*<- lang_ru ;;*);; 
+
+concept_layout_manager <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(менеджер компоновки)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> observation;
+		concept_container;
+		nrel_size;
+		concept_window;
+		nrel_scale;
+		concept_user_interface_component;
+		concept_location;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Менеджер компоновки — высказывание о контейнере, по которому задаётся размер и расположение компонентов пользовательского интерфейса, а также  предусматривается масштабирование этих компонентов при изменении размеров окна.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+concept_layout_manager => nrel_inclusion:concept_boundary_layout_manager;concept_thread_layout_manager;concept_table_layout_manager; concept_list_layout_manager;;
+
+nrel_size => nrel_main_idtf: [размер*](*<- lang_ru ;;*);;
+nrel_scale => nrel_main_idtf: [масштабирование*](*<- lang_ru ;;*);;
+

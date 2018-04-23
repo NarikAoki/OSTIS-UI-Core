@@ -1,0 +1,40 @@
+sc_node_struct -> sb_d_of_space_entities;;
+
+sb_d_of_space_entities => nrel_main_idtf:
+	[Предметная область пространственных сущностей]
+	(* <- lang_ru;; *);
+	[Subject domain of space entities]
+	(* <- lang_en;; *);;
+
+sb_d_of_space_entities <- subject_domain;;
+
+sb_d_of_space_entities -> rrel_maximum_studied_object_class: 
+	concept_space_entity;; 
+
+sb_d_of_space_entities -> rrel_not_maximum_studied_object_class: 
+	concept_coordinate_system;
+	concept_cartesian_coordinate_system;
+	concept_polar_coordinate_system;
+	concept_layout_manager;
+	concept_boundary_layout_manager;
+	concept_thread_layout_manager;
+	concept_table_layout_manager;
+	concept_list_layout_manager;;
+
+sb_d_of_space_entities -> rrel_explored_relation: 
+	nrel_coordinate;
+	nrel_coordinate_origin_of_cartesian_system;
+	nrel_unit_segment;
+	nrel_axis;
+	nrel_basis_vector;
+	nrel_reference_point;
+	nrel_quarter;
+	nrel_bound;
+	rrel_pixel;
+	nrel_be_right;
+	nrel_be_left;
+	nrel_be_on_top;
+	nrel_be_down;
+	nrel_horizontally;
+	nrel_vertically;
+	nrel_coordinate_origin;;

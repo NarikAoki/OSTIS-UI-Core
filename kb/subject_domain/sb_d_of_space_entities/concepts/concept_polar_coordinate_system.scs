@@ -1,0 +1,32 @@
+sc_node_not_relation -> concept_polar_coordinate_system;;
+
+concept_polar_coordinate_system => nrel_main_idtf: 
+	[полярная система координат] (*<- lang_ru;;*); 
+	[polar coordinate system] (*<- lang_en;;*);; 
+concept_polar_coordinate_system => nrel_idtf: [множество полярных систем координат] (*<- lang_ru;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_polar_coordinate_system;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_coordinate_system;
+		concept_plane;
+		concept_geometric_point;
+		concept_polar_angle;
+		nrel_angle_measure;
+		nrel_polar_radius;
+		nrel_length;;
+		*);;
+	=> nrel_main_idtf: [Опр.(полярная система координат)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Полярная система координат — система координат, в которой каждая точка на плоскости однозначно определяется значениями меры* полярного угла* и длиной* полярного радиуса*.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_polar_angle => nrel_main_idtf: [полярный угол] (*<- lang_ru ;;*);;
+nrel_angle_measure => nrel_main_idtf: [мера угла*] (*<- lang_ru ;;*);;
+nrel_polar_radius => nrel_main_idtf: [полярный радиус*] (*<- lang_ru ;;*);;
+nrel_length => nrel_main_idtf: [длина*] (*<- lang_ru ;;*);;
+

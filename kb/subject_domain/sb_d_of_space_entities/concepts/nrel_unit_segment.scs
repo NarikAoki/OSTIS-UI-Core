@@ -1,0 +1,43 @@
+sc_node_norole_relation -> nrel_unit_segment;;
+
+nrel_unit_segment => nrel_main_idtf: 
+	[единичный отрезок*] (* <- lang_ru;; *);
+	[unit segment*] (* <- lang_en;; *);; 
+nrel_unit_segment => nrel_idtf: [начальный отрезок*] (*<- lang_ru ;;*);;
+
+nrel_unit_segment <- antireflexive_relation;;
+nrel_unit_segment <- antitransitive_relation;;
+nrel_unit_segment <- antisymmetric_relation;;
+nrel_unit_segment <- norole_relation;;
+nrel_unit_segment <- binary_relation;;
+nrel_unit_segment <- oriented_relation;;
+
+nrel_unit_segment => nrel_first_domain: concept_cartesian_coordinate_system;;
+nrel_unit_segment => nrel_second_domain: concept_segment;;
+nrel_unit_segment => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_cartesian_coordinate_system;
+		concept_segment;;
+		*);;
+	*);;
+
+nrel_unit_segment <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(единичный отрезок*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_segment;
+		nrel_axis;
+		nrel_length;
+		concept_cartesian_coordinate_system;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Единичный отрезок* — отрезок, равный единице длины при геометрических построениях и отмечаемый на каждой осей* декартовой системы координат.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+concept_segment => nrel_main_idtf: [отрезок] (*<- lang_ru ;;*);;

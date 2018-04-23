@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_table_layout_manager;;
+
+concept_table_layout_manager => nrel_main_idtf: 
+	[табличный менеджер компоновки] (* <- lang_ru;; *);
+	[table layout manager] (* <- lang_en;; *);; 
+concept_table_layout_manager => nrel_idtf: [множество табличных менеджеров компоновки] (*<- lang_ru ;;*);; 
+
+concept_table_layout_manager <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(табличный менеджер компоновки)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_layout_manager;
+		concept_user_interface_component;
+		nrel_row;
+		concept_table;
+		nrel_coloumn;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Табличный менеджер компоновки — менеджер компоновки, размещающий компоненты пользовательского интерфейса по столбцам и строкам таблицы.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+concept_table => nrel_main_idtf: [таблица](*<- lang_ru ;;*);;
+nrel_row => nrel_main_idtf: [строка*](*<- lang_ru ;;*);;
+nrel_coloumn => nrel_main_idtf: [столбец*](*<- lang_ru ;;*);;

@@ -1,0 +1,33 @@
+sc_node_norole_relation -> nrel_be_down;;
+
+nrel_be_down => nrel_main_idtf: 
+	[быть внизу*] (* <- lang_ru;; *);
+	[be down*] (* <- lang_en;; *);; 
+nrel_be_down => nrel_idtf: [располагаться внизу*] (*<- lang_ru ;;*);;
+
+nrel_be_down <- antireflexive_relation;;
+nrel_be_down <- antitransitive_relation;;
+nrel_be_down <- antisymmetric_relation;;
+nrel_be_down <- norole_relation;;
+nrel_be_down <- binary_relation;;
+nrel_be_down <- oriented_relation;;
+
+nrel_be_down => nrel_first_domain: concept_space_entity;;
+nrel_be_down => nrel_second_domain: concept_space_entity;;
+nrel_be_down => nrel_definitional_domain: concept_space_entity;;
+
+nrel_be_down <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(быть внизу*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> binary_relation;
+		oriented_relation;
+		concept_space_entity;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Быть внизу* — бинарное ориентированное отношение, вторым компонентом связок которого является знак пространственной сущности, располагающаяся ниже пространственной сущности, знак которой является первым компонентом связки.](*<- lang_ru ;;*);;
+	*);;
+*);;

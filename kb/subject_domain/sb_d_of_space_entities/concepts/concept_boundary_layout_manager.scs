@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_boundary_layout_manager;;
+
+concept_boundary_layout_manager => nrel_main_idtf: 
+	[граничный менеджер компоновки] (* <- lang_ru;; *);
+	[boundary layout manager] (* <- lang_en;; *);; 
+concept_boundary_layout_manager => nrel_idtf: [множество граничных менеджеров компоновки] (*<- lang_ru ;;*);; 
+
+concept_boundary_layout_manager <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(граничный менеджер компоновки)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_layout_manager;
+		concept_user_interface_component;
+		nrel_be_in_center;
+		concept_container;
+		concept_location;
+		nrel_be_right;
+		nrel_be_left;
+		nrel_be_on_top;
+		nrel_be_down;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Граничный менеджер компоновки — менеджер компоновки, размещающий компоненты пользовательского интерфейса в одну из пяти предусмотренных областей контейнера:  наверх, вниз, влево, вправо, в центр.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+statement -> ...
+	(*
+	<- rrel_axiom: sb_d_of_space_entity;;
+	-> rrel_key_sc_element: concept_boundary_layout_manager; concept_user_interface_component; nrel_be_in_center;;
+	=> nrel_main_idtf: [Утв.(точка, преобразование симметрии*, геометрическая фигура)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...	
+		(*
+		-> rrel_example : [По умолчанию компонент пользовательского интерфейса добавляется в центр; если в указанном регионе уже есть элемент, то он замещается новым.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+nrel_be_in_center => nrel_main_idtf: [быть в центре*] (*<- lang_ru ;;*);;
+
+

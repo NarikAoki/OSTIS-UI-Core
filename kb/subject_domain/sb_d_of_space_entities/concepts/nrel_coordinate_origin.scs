@@ -1,0 +1,43 @@
+sc_node_norole_relation -> nrel_coordinate_origin;;
+
+nrel_coordinate_origin => nrel_main_idtf: 
+	[начало координат*] (* <- lang_ru;; *);
+	[coordinate origin*] (* <- lang_en;; *);; 
+nrel_coordinate_origin => nrel_idtf: [начало координат точек*] (*<- lang_ru ;;*);;
+
+nrel_coordinate_origin <- antireflexive_relation;;
+nrel_coordinate_origin <- antitransitive_relation;;
+nrel_coordinate_origin <- antisymmetric_relation;;
+nrel_coordinate_origin <- norole_relation;;
+nrel_coordinate_origin <- binary_relation;;
+nrel_coordinate_origin <- oriented_relation;;
+
+nrel_coordinate_origin => nrel_first_domain: concept_coordinate_system;;
+nrel_coordinate_origin => nrel_second_domain: concept_geometric_point;;
+nrel_coordinate_origin => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_coordinate_system;
+		concept_geometric_point;;
+		*);;
+	*);;
+
+nrel_coordinate_origin <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(начало координат*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_coordinate_system;
+		concept_geometric_point;
+		nrel_reference_point;
+		binary_relation;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Начало координат* — бинарное отношение, первым компонентом связок которого является некоторая система координат, вторым – точка, используемая как точка отсчёта для всех остальных точек.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+
