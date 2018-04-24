@@ -1,0 +1,25 @@
+ui_menu_file_to_printing_relevant_command <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_to_printing_relevant_command => nrel_main_idtf: 
+	[Вывести р к] 
+	(* <- lang_ru;; *);
+	[Print relevant command] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_to_printing_relevant_command => ui_nrel_command_template:
+	[*
+		action_to_print_relevant_command _-> ._action_to_print_relevant_command_instance
+			(*
+			_-> ui_arg_1;;					
+			*);;
+		._action_to_print_relevant_command_instance _<- question;;
+	*];;
+
+ui_menu_file_to_printing_relevant_command => ui_nrel_command_lang_template: 
+	[Вывести релевантную команду с аргументом: $ui_arg_1] 
+	(* <- lang_ru;; *);
+	[Print relevant command with argument: $ui_arg_1] 
+	(* <- lang_en;; *);;
+
+
+

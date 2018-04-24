@@ -1,0 +1,333 @@
+agent_of_counting_questions
+=> nrel_main_idtf:
+	[агентная scp-программа подсчета количества запросов] (* <- lang_ru;; *);
+	[agent of scp-program of counting questions] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_counting_questions 
+	(*
+	-> rrel_params: .agent_of_counting_questions_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+			*);;
+	-> rrel_operators: .agent_of_counting_questions_operators
+		(*
+
+		-> rrel_init: .agent_of_counting_questions_operator1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_counting_questions_operator2;;
+			=> nrel_else: .agent_of_counting_questions_return;;
+			*);;
+
+		-> .agent_of_counting_questions_operator2
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_to_count_questions;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_counting_questions_operator3;;
+			=> nrel_else: .agent_of_counting_questions_return;;
+			*);;
+		
+		-> .agent_of_counting_questions_operator3
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _person;;
+			
+			=> nrel_then: .agent_of_counting_questions_operatorA1;;
+			=> nrel_else: .agent_of_counting_questions_return;;
+			*);;
+
+		-> .agent_of_counting_questions_operatorA1 (*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_struct: rrel_const: _answer;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator4;;
+			*);;
+
+		-> .agent_of_counting_questions_operator4 (*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: questions_template;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _my_action_param;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_set: _actions;;
+					*);;
+				*);;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _user_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _person;;
+					*);;
+				*);;
+
+			=> nrel_then: .agent_of_counting_questions_operator5;;
+			=> nrel_else: .agent_of_counting_questions_return_debug;;
+			*);;
+
+		-> .agent_of_counting_questions_return_debug (*
+			<- printNl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: [before retur];;
+
+			=> nrel_goto: .agent_of_counting_questions_return;;
+			*);;
+
+		-> .agent_of_counting_questions_operator5
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _actions;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _action;;
+
+			=> nrel_then: .agent_of_counting_questions_operator6;;
+			=> nrel_else: .agent_of_counting_questions_operator14;; //13
+			*);;
+
+		-> .agent_of_counting_questions_operator6 (*
+			<- eraseSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _actions;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arcs;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _action;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator7;;
+			*);;
+
+		-> .agent_of_counting_questions_operator7 (*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: questions_template;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _my_question;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_set: _questions;;
+					*);;
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _my_ui_file;;
+					-> rrel_2: rrel_assign: rrel_scp_var: _ui_file;;
+					*);;
+				*);;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _my_action_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _action;;
+					*);;
+				*);;
+
+			=> nrel_then: .agent_of_counting_questions_operator8;;
+			=> nrel_else: .agent_of_counting_questions_operator5;; 
+			*);;		
+
+		-> .agent_of_counting_questions_operator8
+			(*
+			<- contAssign;; 
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _count;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .agent_of_counting_questions_operator9_debug;;
+			*);;
+
+		-> .agent_of_counting_questions_operator9_debug (*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _questions;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator9;;
+			*);;
+
+		-> .agent_of_counting_questions_operator9 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _questions;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _question;;
+
+			=> nrel_then: .agent_of_counting_questions_operator10;;
+			=> nrel_else: .agent_of_counting_questions_operator12;;
+			*);;
+
+		-> .agent_of_counting_questions_operator10 (*
+			<- eraseSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _questions;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arcs;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _question;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator11;;
+			*);;
+
+		-> .agent_of_counting_questions_operator11
+			(*
+			<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _count;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _count;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+
+			=> nrel_goto: .agent_of_counting_questions_operator9;;
+			*);;
+		
+		-> .agent_of_counting_questions_operator12 (*
+			<- sys_gen;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: gen_questions_template;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _tree ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _my_gen_count;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _count;;
+					*);;
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _my_gen_ui_file;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _ui_file;;
+					*);;
+				*);;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator12_1;;
+			*);;
+
+		-> .agent_of_counting_questions_operator12_1 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _count;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator12_2;;
+			*);;
+
+		-> .agent_of_counting_questions_operator12_2
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _ui_file;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator5_print;;
+			*);;		
+
+		-> .agent_of_counting_questions_operator5_print (*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator5;;
+			*);;
+
+		-> .agent_of_counting_questions_operator13 (*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: gen_questions_template;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... ;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... ;;
+			-> rrel_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_then: .agent_of_counting_questions_operator14;;
+			=> nrel_else: .agent_of_counting_questions_return;;
+			*);;
+
+		-> .agent_of_counting_questions_operator14 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: frequency_of_fail_command;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator15;;
+			*);;
+
+		-> .agent_of_counting_questions_operator15 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: exact_value;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator16;;
+			*);;
+
+		-> .agent_of_counting_questions_operator16 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_amount;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator17;;
+			*);;
+
+		-> .agent_of_counting_questions_operator17 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: number;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator18;;
+			*);;
+
+		-> .agent_of_counting_questions_operator18 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_identification;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator19;;
+			*);;
+
+		-> .agent_of_counting_questions_operator19 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_decimal;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator20;;
+			*);;
+
+		-> .agent_of_counting_questions_operator20 (*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_counting_questions_operator21;;
+			*);;
+
+		-> .agent_of_counting_questions_operator21 (*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_counting_questions_return;;			
+			*);;
+				
+		-> .agent_of_counting_questions_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;

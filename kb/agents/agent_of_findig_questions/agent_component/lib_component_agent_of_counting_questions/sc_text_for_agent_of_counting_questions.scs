@@ -1,0 +1,6 @@
+sc_text_of_agent_of_counting_questions
+-> rrel_key_sc_element:
+	agent_of_counting_questions;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_of_counting_questions = [*^"file://agent_of_counting_questions.scsi"*];;
