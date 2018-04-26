@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_action_of_translation_into_an_external_language;;
+
+concept_action_of_translation_into_an_external_language => nrel_main_idtf: [действие трансляции на внешний язык](*<- lang_ru ;;*);;
+concept_action_of_translation_into_an_external_language => nrel_idtf: [множество действий трансляции на внешний язык](*<- lang_ru ;;*);;
+concept_action_of_translation_into_an_external_language => nrel_main_idtf: [action of translation into an external language](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_action_of_translation_into_an_external_language;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_effector_systemic_action;;
+		-> nrel_sc_text_translation;;
+		-> ostis_system;;
+		*);;
+	=> nrel_main_idtf: [Опр.(действие трансляции на внешний язык)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие трансляции на внешний язык — эффекторное системное действие, связанное с трансляцией sc-текста* ostis-системы на один из выбранных языков отображения внешних текстов.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

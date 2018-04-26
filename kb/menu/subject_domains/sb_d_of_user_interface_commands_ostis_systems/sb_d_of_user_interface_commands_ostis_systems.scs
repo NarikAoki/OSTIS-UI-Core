@@ -1,0 +1,19 @@
+sc_node_struct -> sb_d_of_user_interface_commands_ostis_systems;;
+
+sb_d_of_user_interface_commands_ostis_systems => nrel_main_idtf:
+	[Предметная область интерфейсных команд пользователя ostis-системы]
+	(* <- lang_ru;; *);
+	[Subject domain of components user interface commands ostis systems]
+	(* <- lang_en;; *);;
+
+sb_d_of_user_interface_commands_ostis_systems <- subject_domain;;
+
+sb_d_of_user_interface_commands_ostis_systems -> rrel_maximum_studied_object_class: 
+	concept_interface_action_of_user_ostis_system;; 
+
+sb_d_of_user_interface_commands_ostis_systems -> rrel_not_maximum_studied_object_class: 
+	concept_command_formed_in_external_language;
+	concept_command_formed_in_language_of_interface;
+	concept_command_of_user_ostis_system;
+	concept_class_of_commands_with_three_or_more_arguments;
+	concept_class_of_commands_with_random_number_of_arguments;;	

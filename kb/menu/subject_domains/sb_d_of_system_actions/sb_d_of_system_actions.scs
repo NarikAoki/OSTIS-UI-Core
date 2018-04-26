@@ -1,0 +1,21 @@
+sc_node_struct -> sb_d_of_system_actions;;
+
+sb_d_of_system_actions => nrel_main_idtf:
+	[Предметная область системных действий](* <- lang_ru;; *);
+	[Subject domain of system actions](* <- lang_en;; *);;
+
+sb_d_of_system_actions <- subject_domain;;
+
+sb_d_of_system_actions -> rrel_maximum_studied_object_class: 
+	concept_systemic_action;; 
+
+sb_d_of_system_actions -> rrel_not_maximum_studied_object_class: 
+   concept_action_of_command_initiation;
+    concept_action_of_knowledge_base_integration;
+    concept_action_of_ontology_equalization;
+    concept_effector_systemic_action;
+    concept_action_of_translation_into_an_external_language;
+    concept_receptor_systemic_action;
+    concept_action_of_command_initiation;
+    concept_systemic_action;;
+    

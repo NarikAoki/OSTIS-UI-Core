@@ -1,0 +1,23 @@
+sc_node_not_relation -> concept_switch_button;;
+
+concept_switch_button => nrel_main_idtf: [кнопка-переключатель] (*<- lang_ru ;;*);; 
+concept_switch_button => nrel_main_idtf: [switch button] (*<- lang_en ;;*);; 
+concept_switch_button => nrel_idtf: [множество кнопок-переключателей] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_switch_button;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_sign;; 
+		-> nrel_choice;;
+		-> command;;
+		*);;
+	=> nrel_main_idtf: [Опр.(кнопка-переключатель)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Кнопка-переключатель — знак команды выбора альтернативы.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+nrel_choice => nrel_main_idtf: [выбор*] (*<- lang_ru;;*);;

@@ -1,0 +1,48 @@
+sc_node_not_relation ->	concept_action_of_expanding_workspace_of_window;;
+
+concept_action_of_expanding_workspace_of_window => nrel_main_idtf: [действие расширения рабочей области окна] (*<- lang_ru ;;*);;
+concept_action_of_expanding_workspace_of_window  => nrel_idtf: [расширение рабочей области окна] (*<- lang_ru ;;*);;
+concept_action_of_expanding_workspace_of_window => nrel_main_idtf: [action of expanding workspace of window] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие расширения рабочей области окна)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_expanding_workspace_of_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_action_of_manipulationg_of_the_working_area_of_the_ostis_system_window;;
+		-> concept_viewport;;
+		-> concept_sc_text;;
+		-> concept_window;;
+		-> ostis_system;;
+		*);;
+	
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие расширения рабочей области окна — действие манипулирования рабочей областью окна ostis-системы, направленное на увеличение области просмотра sc-текста, отображённого в некотором окне ostis-системы.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_of_expanding_workspace_of_window;;
+	-> rrel_key_sc_element: concept_mouse_wheel;;
+	-> rrel_key_sc_element: nrel_forward;;
+	-> rrel_key_sc_element:	concept_key_plus;; 
+	-> rrel_key_sc_element: concept_key_ctrl;;
+	-> rrel_key_sc_element: concept_key_combination;;
+    	=> nrel_main_idtf: [Утв. (действие  расширения рабочей области окна, колесо мыши, вперёд*, комбинации клавиш, клавиша Ctrl, клавиша “+”).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие расширения рабочей области окна может быть реализовано прокруткой колеса мыши вперёд или нажатием комбинации клавиш Ctrl и “+”.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
+	*);;
+
+concept_mouse_wheel => nrel_main_idtf: [колесо мыши] (*<- lang_ru ;;*);;
+nrel_forward => nrel_main_idtf: [вперёд*] (*<- lang_ru ;;*);;
+concept_key_ctrl => nrel_main_idtf: [клавиша «Сtrl»] (*<- lang_ru ;;*);;
+concept_key_plus => nrel_main_idtf: [клавиша «+»] (*<- lang_ru ;;*);;
+concept_key_combination => nrel_main_idtf: [комбинация клавиш] (*<- lang_ru ;;*);;
+concept_sc_text => nrel_main_idtf: [sc-текст] (*<- lang_ru ;;*);; 
+concept_viewport => nrel_main_idtf: [область просмотра] (*<- lang_ru ;;*);; 

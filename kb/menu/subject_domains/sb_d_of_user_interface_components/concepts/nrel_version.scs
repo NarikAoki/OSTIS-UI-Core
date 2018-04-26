@@ -1,0 +1,40 @@
+sc_node_norole_relation -> nrel_version;;
+
+nrel_version => nrel_main_idtf: [версия*](*<- lang_ru ;;*);;
+nrel_version => nrel_idtf: [быть версией*](*<- lang_ru ;;*);;
+nrel_version => nrel_main_idtf: [version*](*<- lang_en ;;*);;
+
+binary_relation -> nrel_version;;
+oriented_relation -> nrel_version;;
+antitransitive_relation -> nrel_version;;
+antisymmetric_relation -> nrel_version;;
+antireflexive_relation -> nrel_version;;
+
+nrel_version => nrel_first_domain: concept_user_interface_component;;						
+nrel_version => nrel_second_domain: number;;
+nrel_version => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_user_interface_component;;
+		<- number;;
+		*);;
+	*);;
+
+definition -> ...	
+	(*
+	-> rrel_key_sc_element: nrel_version;;
+	<= nrel_using_constants: ...
+		(*
+		-> binary_relation;;
+		-> oriented_relation;;
+		-> concept_user_interface_component;; 
+		-> number;;
+		-> nrel_new_version;;
+		*);;
+	=> nrel_main_idtf: [Опр.(версия*)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example : [Версия* — бинарное ориентированное отношение, первым компонентом связок которого является компонент пользовательского интерфейса, а вторым — число, показывающее, сколько новых версий* этого компонента пользовательского интерфейса было создано с начала его существования.](*<- lang_ru ;;*);;
+		*);;
+	*);;

@@ -1,0 +1,39 @@
+sc_node_norole_relation -> nrel_recipient;;
+
+nrel_recipient => nrel_main_idtf: [получатель*](*<- lang_ru ;;*);;
+nrel_recipient => nrel_idtf: [быть получателем*](*<- lang_ru ;;*);;
+nrel_recipient => nrel_main_idtf: [recipient](*<- lang_en ;;*);;
+
+binary_relation -> nrel_recipient;;
+oriented_relation -> nrel_recipient;;
+antitransitive_relation -> nrel_recipient;;
+antisymmetric_relation -> nrel_recipient;;
+antireflexive_relation -> nrel_recipient;;
+
+nrel_recipient=> nrel_first_domain: concept_message;;						
+nrel_recipient => nrel_second_domain: entity;;
+nrel_recipient => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_message;;
+		-> entity;;
+		*);;
+	*);;
+
+definition -> ...	
+	(*
+	-> rrel_key_sc_element: nrel_recipient;;
+	<= nrel_using_constants: ...
+		(*
+		-> binary_relation;;
+		-> oriented_relation;;
+		-> entity;;
+		-> concept_message;;
+		*);;
+	=> nrel_main_idtf: [Опр.(получатель*)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Получатель* — бинарное ориентированное отношение, первым компонентом связок которого является знак сообщения, а вторым компонентом связок — знак некоторой сущности, которой предназначено сообщение отправителя*.](*<- lang_ru ;;*);;
+		*);;
+	*);;

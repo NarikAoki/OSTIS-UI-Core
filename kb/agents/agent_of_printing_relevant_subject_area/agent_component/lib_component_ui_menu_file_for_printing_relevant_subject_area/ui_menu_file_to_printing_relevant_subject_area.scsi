@@ -1,0 +1,25 @@
+ui_menu_file_to_printing_relevant_subject_area <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_to_printing_relevant_subject_area => nrel_main_idtf: 
+	[Вывести наиболее релевантную область] 
+	(* <- lang_ru;; *);
+	[Check the unsuccessfully questions] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_to_printing_relevant_subject_area => ui_nrel_command_template:
+	[*
+		action_to_print_relevant_subject_area _-> ._action_to_print_relevant_subject_area_instance
+			(*
+			_-> ui_arg_1;;					
+			*);;
+		._action_to_print_relevant_subject_area_instance _<- question;;
+	*];;
+
+ui_menu_file_to_printing_relevant_subject_area => ui_nrel_command_lang_template: 
+	[Вывести наиболее релевантную ПрО для: $ui_arg_1] 
+	(* <- lang_ru;; *);
+	[Check unsuccessfully questions: $ui_arg_1] 
+	(* <- lang_en;; *);;
+
+
+

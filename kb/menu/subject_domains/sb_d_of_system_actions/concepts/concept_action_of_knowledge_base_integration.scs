@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_action_of_knowledge_base_integration;;
+
+concept_action_of_knowledge_base_integration => nrel_main_idtf: [действие интеграции базы знаний](*<- lang_ru ;;*);;
+concept_action_of_knowledge_base_integration => nrel_idtf: [множество действий интеграции базы знаний](*<- lang_ru ;;*);;
+concept_action_of_knowledge_base_integration => nrel_main_idtf: [action of knowledge base integration](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_action_of_knowledge_base_integration;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_systemic_action;;
+		-> sc_memory;;
+		-> subject_domain;;
+		-> ostis_system;;
+		*);;
+	=> nrel_main_idtf: [Опр.(действие интеграции базы знаний)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие интеграции базы знаний — системное действие, связанное с появлением в sc-памяти новых фрагментов базы знаний ostis-системы и попыткой упорядочить эти фрагменты с учётом имеющейся иерархии предметных областей.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+	
+concept_systemic_action => nrel_inclusion: concept_action_of_ontology_equalization;;

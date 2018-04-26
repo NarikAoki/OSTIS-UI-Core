@@ -1,0 +1,38 @@
+sc_node_not_relation ->	concept_action_to_indicate_the_completion_of_the_enumeration_of_arguments;;
+
+concept_action_to_indicate_the_completion_of_the_enumeration_of_arguments  => nrel_main_idtf: [действие указания факта завершения перечисления аргументов] (*<- lang_ru ;;*);;
+concept_action_to_indicate_the_completion_of_the_enumeration_of_arguments  => nrel_idtf: [указание факта завершения перечисления аргументов] (*<- lang_ru ;;*);;
+concept_action_to_indicate_the_completion_of_the_enumeration_of_arguments  => nrel_main_idtf: [action to indicate the completion of the enumeration of arguments] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие указания факта завершения перечисления аргументов)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_to_indicate_the_completion_of_the_enumeration_of_arguments;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_to_refine_the_command_specification;;
+		-> nrel_initiation;;
+		-> command;;
+		-> nrel_argument;;
+		-> entity;;
+		-> concept_action_specification;;
+		*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие указания факта завершения перечисления аргументов — элементарное пользовательское действие уточнения спецификации команды, связанное с инициированием команды, аргументами которой становятся все сущности, соответствующие списку аргументов действия, входящего в состав спецификации.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_to_specify_the_argument_of_the_action_to_be_initiated;;
+	-> rrel_key_sc_element: concept_left_key_of_mouse;;
+  	=> nrel_main_idtf: [Утв. (действие указания факта завершения перечисления аргументов, левая кнопка мыши).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие указания факта завершения перечисления аргументов может быть реализовано двойным нажатием левой кнопки мыши](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
+	*);;
+
+nrel_initiation => nrel_main_idtf: [инициализация*] (*<- lang_ru ;;*);;

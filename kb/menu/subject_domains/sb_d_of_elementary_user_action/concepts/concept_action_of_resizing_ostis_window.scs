@@ -1,0 +1,37 @@
+sc_node_not_relation ->	concept_action_of_resizing_ostis_window;;
+
+concept_action_of_resizing_ostis_window => nrel_main_idtf: [действие изменения размеров окна ostis-системы] (*<- lang_ru ;;*);;
+concept_action_of_resizing_ostis_window  => nrel_idtf: [изменение размеров окна ostis-системы] (*<- lang_ru ;;*);;
+concept_action_of_resizing_ostis_window => nrel_main_idtf: [action of resizing ostis window] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие изменения размеров окна ostis-системы)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_resizing_ostis_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_action_of_changing_the_configuration_of_the_ostis_system_window;;
+		-> concept_form;;
+		-> concept_window;;
+		-> ostis_system;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие изменения размеров окна ostis-системы — действие изменения конфигурации окна ostis-системы, связанное с изменением формы окна ostis-системы.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_of_resizing_ostis_window;;
+	-> rrel_key_sc_element: ostis_system;;
+	-> rrel_key_sc_element: concept_cursor;;
+	-> rrel_key_sc_element:	concept_left_key_of_mouse;; 
+	-> rrel_key_sc_element: concept_window;;
+  	=> nrel_main_idtf: [Утв. (действие изменения размеров окна ostis-системы, левой кнопки мыши, окно, ostis-система, курсор).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие изменения размеров окна ostis-системы может быть реализовано одновременным нажатием левой кнопки мыши у края окна ostis-системы и передвижением курсора мыши в сторону растяжения/сжатия этого окна.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
+	*);;

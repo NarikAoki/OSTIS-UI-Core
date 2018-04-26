@@ -1,0 +1,426 @@
+agent_of_printing_relevant_subject_area
+=> nrel_main_idtf:
+	[агентная scp-программа вывода релевантной предметной области] (* <- lang_ru;; *);
+	[agent of scp-program of printing relevant subject area] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_printing_relevant_subject_area 
+	(*
+	-> rrel_params: .agent_of_printing_relevant_subject_area_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+			*);;
+	-> rrel_operators: .agent_of_printing_relevant_subject_area_operators
+		(*
+
+		-> rrel_init: .agent_of_printing_relevant_subject_area_operator1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_printing_relevant_subject_area_operator2;;
+			=> nrel_else: .agent_of_printing_relevant_subject_area_return;;
+			*);;
+
+		-> .agent_of_printing_relevant_subject_area_operator2
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_to_print_relevant_subject_area;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_printing_relevant_subject_area_operator3;;
+			=> nrel_else: .agent_of_printing_relevant_subject_area_return;;
+			*);;
+		
+		-> .agent_of_printing_relevant_subject_area_operator3
+			(*
+			<- searchElStr3;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _person;;
+			
+			=> nrel_then: .agent_of_printing_relevant_subject_area_operator4;;
+			=> nrel_else: .agent_of_printing_relevant_subject_area_return;;
+			*);;
+
+		-> .agent_of_printing_relevant_subject_area_operator4 (*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _max;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .agent_of_printing_relevant_subject_area_operatorA1;;
+			*);;
+
+		-> .agent_of_printing_relevant_subject_area_operatorA1 (*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_struct: rrel_const: _answer;;
+
+			=> nrel_goto: .agent_of_printing_relevant_subject_area_operatorA2;;
+			*);;	
+
+		-> .agent_of_printing_relevant_subject_area_operatorA2 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: subject_domain;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _subject;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _subjects;;
+
+			=> nrel_then: .agent_of_counting_unsuccessfully_questions_operatorA3;;
+			=> nrel_else: .agent_of_counting_unsuccessfully_questions_operatorE1;;			
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorA3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _subjects;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _subject;;
+
+			=> nrel_then: .agent_of_counting_unsuccessfully_questions_operatorA4;;
+			=> nrel_else: .agent_of_counting_unsuccessfully_questions_operatorE1;; 
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorA4
+			(*
+			<- eraseEl;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+			
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorA5;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorA5
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _set;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorB1;;
+			*);;
+		
+		-> .agent_of_counting_unsuccessfully_questions_operatorB1
+			(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: relevant_subject_area_maximum;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _max_param;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_set: _temp_set;;
+					*);;
+				*);;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _user_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _person;;
+					*);;
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _subject_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _subject;;
+					*);;
+				*);;
+
+			=> nrel_then: .agent_of_counting_unsuccessfully_questions_operatorB1_2;;
+			=> nrel_else: .agent_of_counting_unsuccessfully_questions_operatorB2;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorB1_2 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _set;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorB2;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorB2
+			(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: relevant_subject_area_not_maximum;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _not_max_param;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_set: _temp_set;;
+					*);;
+				*);;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _user_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _person;;
+					*);;
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _subject_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _subject;;
+					*);;
+				*);;
+
+			=> nrel_then: .agent_of_counting_unsuccessfully_questions_operatorB2_2;;
+			=> nrel_else: .agent_of_counting_unsuccessfully_questions_operatorB3;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorB2_2 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _set;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorB3;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorB3
+			(*
+			<- sys_search;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: relevant_subject_area_relation;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _relation_param;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_set: _temp_set;;
+					*);;
+				*);;
+			-> rrel_3: rrel_fixed: rrel_scp_const: ... (*
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _user_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _person;;
+					*);;
+				-> ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_const: _subject_param;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _subject;;
+					*);;
+				*);;
+
+			=> nrel_then: .agent_of_counting_unsuccessfully_questions_operatorB3_2;;
+			=> nrel_else: .agent_of_counting_unsuccessfully_questions_operatorC1;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorB3_2 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _set;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorC1;;
+			*);;
+
+		/*
+		Проверка является ли мн-во пустым
+		*/
+		-> .agent_of_counting_unsuccessfully_questions_operatorC1 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			=> nrel_then: .agent_of_counting_unsuccessfully_questions_operatorC2;;
+			=> nrel_else: .agent_of_counting_unsuccessfully_questions_operatorA3;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorC2 (*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _count;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorC3;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorC3 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+			=> nrel_then: .agent_of_counting_unsuccessfully_questions_operatorC4;;
+			=> nrel_else: .agent_of_counting_unsuccessfully_questions_operatorD1;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorC4 (*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorC5;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorC5 (*
+			<- contAdd;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _count;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _count;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorC3;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorD1 (*
+			<- ifGr;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _count;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _max;;
+			
+			=> nrel_then: .agent_of_counting_unsuccessfully_questions_operatorD2;;
+			=> nrel_else: .agent_of_counting_unsuccessfully_questions_operatorA3;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorD2 (*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _max;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _count;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorD3;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorD3 (*
+			<- varAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _max_subject;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _subject;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorA3;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE1 (*
+			<- ifEq;;
+			
+			-> rrel_1: rrel_fixed: rrel_scp_var: _max;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+			
+			=> nrel_then: .agent_of_printing_relevant_subject_area_return;;
+			=> nrel_else: .agent_of_counting_unsuccessfully_questions_operatorE2;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE2 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: relevant_subject_domain;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _max_subject;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorE3;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE3 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _max_subject;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorE4;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE4 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: relevant_subject_domain;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorE5;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE5 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: relevance;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorE6;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE6 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: immeasurable_parameter;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorE7;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE7 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorE8;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE8 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: immeasurable_parameter;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: relevance;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorE8_1;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE8_1 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _pos_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorE9;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE9 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: relevance;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: relevant_subject_domain;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_counting_unsuccessfully_questions_operatorE10;;
+			*);;
+
+		-> .agent_of_counting_unsuccessfully_questions_operatorE10 (*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_printing_relevant_subject_area_return;;			
+			*);;
+				
+		-> .agent_of_printing_relevant_subject_area_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;

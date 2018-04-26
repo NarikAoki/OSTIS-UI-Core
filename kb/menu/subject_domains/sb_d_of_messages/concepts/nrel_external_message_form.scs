@@ -1,0 +1,42 @@
+sc_node_norole_relation -> nrel_external_message_form;;
+
+nrel_external_message_form => nrel_main_idtf: [внешняя форма сообщения*](*<- lang_ru ;;*);;
+nrel_external_message_form => nrel_idtf: [быть внешней формой сообщения*](*<- lang_ru ;;*);;
+nrel_external_message_form => nrel_main_idtf: [external message form](*<- lang_en ;;*);;
+
+binary_relation -> nrel_external_message_form;;
+oriented_relation -> nrel_external_message_form;;
+antitransitive_relation -> nrel_external_message_form;;
+antisymmetric_relation -> nrel_external_message_form;;
+antireflexive_relation -> nrel_external_message_form;;
+
+nrel_external_message_form => nrel_first_domain:concept_message;;						
+nrel_external_message_form => nrel_second_domain: file;;
+nrel_external_message_form => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_message;;
+		-> file;;
+		*);;
+	*);;
+
+definition -> ...	
+	(*
+	-> rrel_key_sc_element: nrel_external_message_form;;
+	<= nrel_using_constants: ...
+		(*
+		-> binary_relation;;
+		-> oriented_relation;;
+		-> file;;
+		-> nrel_sc_text_translation;;
+		-> concept_message;;
+		*);;
+	=> nrel_main_idtf: [Опр.(внешняя форма сообщения*)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Внешняя форма сообщения* — бинарное ориентированное отношение, первым компонентом связок которого является знак сообщения, а вторым компонентом – знак файла, сформированного в результате трансляции sc-текста* на внешний язык.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+	

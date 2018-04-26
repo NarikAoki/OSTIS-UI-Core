@@ -1,0 +1,23 @@
+sc_node_not_relation ->	concept_action_of_indicating_the_type_of_action_to_be_initiated;;
+
+concept_action_of_indicating_the_type_of_action_to_be_initiated => nrel_main_idtf: [действие указания типа инициируемого действия] (*<- lang_ru ;;*);;
+concept_action_of_indicating_the_type_of_action_to_be_initiated  => nrel_idtf: [указаниe типа инициируемого действия] (*<- lang_ru ;;*);;
+concept_action_of_indicating_the_type_of_action_to_be_initiated  => nrel_main_idtf: [action of indicating the type of action to be initiated] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие указания типа инициируемого действия)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_indicating_the_type_of_action_to_be_initiated;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_to_refine_the_command_specification;;
+		-> concept_sign;;
+		-> concept_action;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие указания типа инициируемого действия — элементарное пользовательское действие уточнения спецификации команды, связанное с соотнесением знака некоторого действия со знаком класса действия.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+concept_sign => nrel_main_idtf: [знак] (*<- lang_ru ;;*);; 

@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_menu;;
+
+concept_menu => nrel_main_idtf: [меню] (*<- lang_ru ;;*);; 
+concept_menu => nrel_main_idtf: [menu] (*<- lang_en ;;*);; 
+concept_menu => nrel_idtf: [множество меню] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_menu;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_user_interface_component;;      
+		-> concept_container;;
+		-> concept_horizontal_list;;
+		-> concept_vertical_list;;
+		*);;
+	=> nrel_main_idtf: [Опр.(меню)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Меню — контейнер, содержащий компоненты пользовательского интерфейса, организованные в виде горизонтального или вертикального списка.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

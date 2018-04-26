@@ -1,0 +1,25 @@
+sc_node_not_relation ->	concept_action_of_manipulationg_of_the_working_area_of_the_ostis_system_window;;
+	
+concept_action_of_manipulationg_of_the_working_area_of_the_ostis_system_window => nrel_main_idtf: [действие манипулирования рабочей областью окна ostis-системы] (*<- lang_ru ;;*);;
+concept_action_of_manipulationg_of_the_working_area_of_the_ostis_system_window  => nrel_idtf: [манипулирование рабочей областью окна ostis-системы] (*<- lang_ru ;;*);;
+concept_action_of_manipulationg_of_the_working_area_of_the_ostis_system_window => nrel_main_idtf: [action of manipulationg of the working area of the ostis system window] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие манипулирования рабочей областью окна ostis-системы)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_manipulationg_of_the_working_area_of_the_ostis_system_window;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_the_ostis_system_window;;			
+		-> concept_viewport;;
+		-> concept_sc_text;;
+		-> concept_window;;
+		-> ostis_system;;
+		*);;	
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие манипулирования рабочей областью окна ostis-системы — элементарное пользовательское действие над окном ostis-системы, направленное на изменение области просмотра sc-текста, отображённого в некотором окне ostis-системы.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+	
+concept_action_of_changing_the_configuration_of_the_ostis_system_window  => nrel_inclusion: concept_action_of_expanding_workspace_of_window; concept_action_of_narrowing_workspace_of_window;;

@@ -1,0 +1,35 @@
+sc_node_struct -> sb_d_of_messages;;
+
+sb_d_of_messages => nrel_main_idtf:
+	[Предметная область сообщений](* <- lang_ru;; *);
+	[Subject domain of messages](* <- lang_en;; *);;
+
+sb_d_of_messages <- subject_domain;;
+
+sb_d_of_messages -> rrel_maximum_studied_object_class: 
+	concept_message;; 
+
+sb_d_of_messages -> rrel_not_maximum_studied_object_class: 
+    concept_message;
+    concept_ostis_system_user_message;
+    concept_user_message_in_external_language;
+    concept_user_message_in_inner_language;
+    concept_receptor_ostis_system_message;
+    concept_effector_ostis_system_message;
+    concept_inner_ostis_system_message;
+    concept_external_ostis_system_message;
+    concept_narrative_message;
+    concept_imperative_message;
+    concept_ostis_system_message;;
+
+sb_d_of_messages -> rrel_explored_relation: 
+    nrel_external_message_form;
+    nrel_sender;
+    nrel_recipient;
+    nrel_communication_environment;
+    nrel_message_sequence;
+    nrel_timed_message_sequence;
+    nrel_logic_message_sequence;
+    nrel_answer;
+    nrel_task_clarifying_message;
+    nrel_error_message;;

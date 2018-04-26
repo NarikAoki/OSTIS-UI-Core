@@ -1,0 +1,29 @@
+sc_node_not_relation -> concept_inner_ostis_system_message;;
+
+concept_inner_ostis_system_message => nrel_main_idtf: [внутреннее сообщение ostis-системы](*<- lang_ru ;;*);;
+concept_inner_ostis_system_message => nrel_idtf: [множество внутренних сообщений ostis-системы](*<- lang_ru ;;*);;
+concept_inner_ostis_system_message => nrel_main_idtf: [ostis system inner message](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_inner_ostis_system_message;;
+	<= nrel_using_constants: ...
+		(*
+		-> abstract_sc_agent;;      
+		-> sc_memory;;
+		-> ostis_system;;
+		*);;
+	=> nrel_main_idtf: [Опр.(внутреннее сообщение ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Внутреннее сообщение ostis-системы — sc-текст, который генерирует некоторый sc-агент и адресует его через sc-память ostis-системы другим sc-агентам.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+	
+concept_inner_ostis_system_message <= nrel_subdividing: ...
+	(*
+	-> concept_narrative_message;;
+	-> concept_imperative_message;;
+	=> nrel_main_idtf: [Разбиение по признаку содержания сообщения](*<- lang_ru ;;*);;
+	*);;
+

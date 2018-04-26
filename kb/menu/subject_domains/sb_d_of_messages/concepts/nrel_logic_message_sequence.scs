@@ -1,0 +1,36 @@
+sc_node_norole_relation -> nrel_logic_message_sequence;;
+
+nrel_logic_message_sequence => nrel_main_idtf: [логическая последовательность сообщений*](*<- lang_ru ;;*);;
+rel_logic_message_sequence => nrel_idtf: [быть логической последовательностью сообщений*](*<- lang_ru ;;*);;
+nrel_logic_message_sequence => nrel_main_idtf: [logic message sequence](*<- lang_en ;;*);;
+
+binary_relation -> nrel_logic_message_sequence;;
+oriented_relation -> nrel_logic_message_sequence;;
+antitransitive_relation -> nrel_logic_message_sequence;;
+antisymmetric_relation -> nrel_logic_message_sequence;;
+antireflexive_relation -> nrel_logic_message_sequence;;
+
+nrel_logic_message_sequence=> nrel_first_domain: concept_message;;						
+nrel_logic_message_sequence => nrel_second_domain: concept_message;;
+nrel_logic_message_sequence => nrel_definitional_domain: concept_message;;
+
+definition -> ...	
+	(*
+	-> rrel_key_sc_element: nrel_logic_message_sequence;;
+	<= nrel_using_constants: ...
+		(*
+		-> nrel_message_sequence;;
+		-> ostis_system;;
+		-> concept_message;;
+		*);;
+	=> nrel_main_idtf: [Опр.(логическая последовательность сообщений*)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Логическая последовательность сообщений* — последовательность сообщений*, в которой порядок следования определяется смыслом сообщений ostis-системы.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+nrel_logic_message_sequence => nrel_inclusion:
+	nrel_answer;
+	nrel_task_clarifying_message;
+	nrel_error_message;;

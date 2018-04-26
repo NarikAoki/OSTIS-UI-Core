@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_action_of_message_generation;;
+
+concept_action_of_message_generation => nrel_main_idtf: [действие формирования сообщения](*<- lang_ru ;;*);;
+concept_action_of_message_generation => nrel_idtf: [множество действий формирования сообщения](*<- lang_ru ;;*);;
+concept_action_of_message_generation => nrel_main_idtf: [action of message generation](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_action_of_message_generation;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_systemic_action;;
+		-> concept_message;;
+		-> concept_elementary_user_action;;
+		*);;
+	=> nrel_main_idtf: [Опр.(действие формирования сообщения)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие формирования сообщения — системное действие, связанное с генерацией сообщения в результате выполнения некоторого пользовательского или системного действия.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

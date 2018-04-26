@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_receptor_ostis_system_message;;
+
+concept_receptor_ostis_system_message => nrel_main_idtf: [рецепторное сообщение ostis-системы](*<- lang_ru ;;*);;
+concept_receptor_ostis_system_message => nrel_idtf: [множество рецепторных сообщений ostis-системы](*<- lang_ru ;;*);;
+concept_receptor_ostis_system_message => nrel_main_idtf: [receptor message of ostis-system](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_receptor_ostis_system_message;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_ostis_system_message;;     
+		-> concept_imperative_message;;
+		*);;
+	=> nrel_main_idtf: [Опр.(рецепторное сообщение ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Рецепторное сообщение ostis-системы — сообщение ostis-системы, являющееся реакцией на императивное сообщение пользователя ostis-системы.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+statement ->...
+	(*
+	<- rrel_axiom: sb_d_of_messages;;
+	-> rrel_key_sc_element: concept_receptor_ostis_system_message;;
+	=> nrel_main_idtf: [Утв.(ostis-система, императивное сообщение пользователя, задача, действие, ответ*, база знаний пользовательского интерфейса, предметная часть базы знаний)];;  
+	<= nrel_sc_text_translation: ...	
+		(*
+		-> rrel_example: [Возможными реакциями ostis-системы на императивное сообщение пользователя являются:
+
+- указание факта завершения выполнения некоторой задачи, что, например, характерно для поведенческих действий;
+- получение ответа* на поставленную задачу, формируемого либо в результате анализа базы знаний пользовательского интерфейса, либо в результате анализа предметной части базы знаний самой ostis-системы.];; 
+		*);;
+	*);;
+
+concept_receptor_ostis_system_message <= nrel_subdividing: ...
+	(* 
+	-> concept_inner_ostis_system_message;;
+	-> concept_external_ostis_system_message;;
+	=> nrel_main_idtf: [Разбиение по признаку адресата сообщения](*<- lang_ru ;;*);;
+	*);; 

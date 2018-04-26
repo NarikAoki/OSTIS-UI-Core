@@ -1,0 +1,36 @@
+lib_component_agent_of_printing_relevant_subject_area
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент подсчета количества безуспешных запросов]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent for counting unsuccessfully questions]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_to_counting_unsuccessfully_questions; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_printing_relevant_subject_area;
+
+<- rrel_key_sc_element:
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_of_counting_unsuccessfully_questions.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+action_to_print_relevant_subject_area <- sc_node_not_relation;;
+
+action_to_print_relevant_subject_area => nrel_main_idtf: 
+	[действие. Вывести наиболее релевантную предметную область] 
+	(* <- lang_ru;; *);
+	[action. Count the number of unsuccessfully_questions] 
+	(* <- lang_en;; *);;

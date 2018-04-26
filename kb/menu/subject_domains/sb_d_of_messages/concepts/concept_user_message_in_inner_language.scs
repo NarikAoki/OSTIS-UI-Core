@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_user_message_in_inner_language;;
+
+concept_user_message_in_inner_language => nrel_main_idtf: [сообщение пользователя на внутреннем языке](*<- lang_ru ;;*);;
+concept_user_message_in_inner_language => nrel_idtf: [множество сообщений пользователя на внутреннем языке](*<- lang_ru ;;*);;
+concept_user_message_in_inner_language => nrel_main_idtf: [message of ostis-system user in inner language](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_user_message_in_inner_language;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_ostis_system_user_message;;
+		-> ostis_system;;
+		-> concept_sc_text;;
+		*);;
+	=> nrel_main_idtf: [Опр.(сообщение пользователя на внутреннем языке)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> [Cообщение пользователя на внутреннем языке — сообщение пользователя ostis-системы, представляющее собой некоторый sc-текст, предназначенный для использования ostis-системой.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

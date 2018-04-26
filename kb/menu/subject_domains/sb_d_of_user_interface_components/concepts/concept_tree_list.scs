@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_tree_list;;
+
+concept_tree_list => nrel_main_idtf: [древовидный список] (*<- lang_ru ;;*);; 
+concept_tree_list => nrel_main_idtf: [tree list] (*<- lang_en ;;*);; 
+concept_tree_list => nrel_idtf: [множество древовидных списков] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_tree_list;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_list;; 
+		-> concept_entity_output_command;;
+		-> concept_user_interface_element;;
+		-> question_initiated;;
+		-> nrel_argument;;
+		-> concept_sign;;
+		-> concept_window;;
+		*);;
+	=> nrel_main_idtf: [Опр.(древовидный список)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Древовидный список — список, элементы которого организованы в виде многоуровневой иерархии, причём результаты выполнения команды вывода сущностей, являющихся частными по отношению к данной, аргументом которой является элемент списка, выводятся в одном и том же окне.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

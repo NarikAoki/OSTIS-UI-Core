@@ -1,0 +1,42 @@
+sc_node_not_relation  -> concept_action_of_outputting_particular_semantic_neighborhood_of_the_specified_entity;;
+
+concept_action_of_outputting_particular_semantic_neighborhood_of_the_specified_entity => nrel_main_idtf: [действие вывода частной семантической окрестности указанной сущности] (*<- lang_ru ;;*);;
+concept_action_of_outputting_particular_semantic_neighborhood_of_the_specified_entity  => nrel_idtf: [вывод частной семантической окрестности указанной сущности] (*<- lang_ru ;;*);;
+concept_action_of_outputting_particular_semantic_neighborhood_of_the_specified_entity  => nrel_main_idtf: [action of outputting  particular semantic neighborhood of the specified fact] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие вывода частной семантической окрестности указанной сущности)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_action_of_outputting_particular_semantic_neighborhood_of_the_specified_entity;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_entity;;
+		-> nrel_result;;
+		-> structure;;
+		-> entity;;
+		-> nrel_part;;
+		-> semantic_neighborhood;;
+		*);;	
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие вывода частной семантической окрестности указанной сущности — элементарное пользовательское действие над сущностью, в результате которого выводится часть семантической окрестности некоторой сущности в рамках выбранной структуры (например, окна ostis-системы).](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_action_of_outputting_particular_semantic_neighborhood_of_the_specified_entity;;
+	-> rrel_key_sc_element: concept_workspace;;
+	-> rrel_key_sc_element: concept_scrolling;;
+	-> rrel_key_sc_element: concept_window;;
+    	=> nrel_main_idtf: [Утв. (действие вывода частной семантической окрестности указанной сущности, прокрутка, окно, рабоачая область).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие вывода частной семантической окрестности указанной сущности может быть реализовано прокруткой (скроллированием) рабочей области окна.](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
+	*);;
+
+concept_scrolling => nrel_main_idtf: [прокрутка] (*<- lang_ru ;;*);; 
+nrel_part => nrel_main_idtf: [часть*] (*<- lang_ru ;;*);; 
+concept_workspace => nrel_main_idtf: [рабочая область] (*<- lang_ru ;;*);; 

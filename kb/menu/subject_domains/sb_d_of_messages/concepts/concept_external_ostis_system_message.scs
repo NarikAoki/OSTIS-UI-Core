@@ -1,0 +1,29 @@
+sc_node_not_relation -> concept_external_ostis_system_message;;
+
+concept_external_ostis_system_message => nrel_main_idtf: [внешнее сообщение ostis-системы](*<- lang_ru ;;*);;
+concept_external_ostis_system_message => nrel_idtf: [множество внешних сообщений ostis-системы](*<- lang_ru ;;*);;
+concept_external_ostis_system_message => nrel_main_idtf: [ostis system external message](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_external_ostis_system_message;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_ostis_system_message;;
+		-> nrel_recipient;;      
+		-> sc_memory;;
+		-> ostis_system;;
+		*);;
+	=> nrel_main_idtf: [Опр.(внешнее сообщение ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Внешнее сообщение ostis-системы — сообщение ostis-системы, получателем* которого является субъект или группа субъектов, взаимодействующих с ostis-системой как в рамках общей sc-памяти, так и вне этих рамок.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_external_ostis_system_message <= nrel_subdividing: ...
+	(*
+	-> concept_narrative_message;;
+	-> concept_imperative_message;;
+	=> nrel_main_idtf: [Разбиение по признаку содержания сообщения](*<- lang_ru ;;*);;
+	*);; 

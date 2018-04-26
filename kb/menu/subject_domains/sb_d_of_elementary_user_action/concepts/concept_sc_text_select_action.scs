@@ -1,0 +1,41 @@
+sc_node_not_relation ->	concept_sc_text_selection_action;;
+	
+concept_sc_text_selection_action => nrel_main_idtf: [действие выделения sc-текста] (*<- lang_ru ;;*);;
+concept_sc_text_selection_action  => nrel_idtf: [выделение sc-текста] (*<- lang_ru ;;*);;
+concept_sc_text_selection_action  => nrel_main_idtf: [sc-text selection action] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(действие выделения sc-текста)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_sc_text_selection_action;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action_on_sc_text;;
+		-> concept_sc_text;;
+		-> nrel_fragment;;
+		*);;		
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Действие выделение sc-текста — элементарное пользовательское действие над sc-текстом, связанное с выделением некоторого фрагмента sc-текста произвольного размера и содержания.](*<- lang_ru ;;*);;
+		*);;
+	*);; 
+
+statement ->...
+	(*
+	-> rrel_key_sc_element: concept_sc_text_selection_action;;
+	-> rrel_key_sc_element: concept_key_v;;
+	-> rrel_key_sc_element: concept_key_left;;
+	-> rrel_key_sc_element: concept_key_right;;
+	-> rrel_key_sc_element: concept_left_key_of_mouse;;
+	-> rrel_key_sc_element: concept_key_combination;;
+	-> rrel_key_sc_element: concept_key_ctrl;;
+     => nrel_main_idtf: [Утв. (действие выделения sc-текста, клавиша «Сtrl», клавиша «->», клавиша «<-», клавиша «v», левая кнопка мыши, комбинация клавиш).](*<- lang_ru;;*);;
+	<= nrel_sc_text_translation: ...
+		(*
+ 		-> [Действие выделение sc-текста может быть реализовано либо нажатием левой кнопки мыши и передвижением курсора мыши в сторону растяжения/сжатия области выделения, либо нажатием комбинации клавиш «Сtrl» + «->» или «Сtrl» + «<-».](*<- lang_ru;;*);;
+		*);;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
+	*);;
+
+concept_key_left => nrel_main_idtf: [клавиша «<-»] (*<- lang_ru ;;*);; 
+concept_key_right => nrel_main_idtf: [клавиша «->»] (*<- lang_ru ;;*);; 

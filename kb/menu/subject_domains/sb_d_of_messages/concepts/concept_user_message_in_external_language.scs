@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_user_message_in_external_language;;
+
+concept_user_message_in_external_language => nrel_main_idtf: [сообщение пользователя на внешнем языке](*<- lang_ru ;;*);;
+concept_user_message_in_external_language => nrel_idtf: [множество сообщений пользователя на внешнем языке](*<- lang_ru ;;*);;
+concept_user_message_in_external_language => nrel_main_idtf: [message of ostis-system user in external language](*<- lang_en;;*);;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_user_message_in_external_language;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_ostis_system_user_message;;
+		*);;
+	=> nrel_main_idtf: [Опр.(сообщение пользователя на внешнем языке)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Cообщение пользователя на внешнем языке — сообщение пользователя ostis-системы, сформированное на языке интерфейсных действий (интерфейсных команд), представляющее собой последовательность действий с указанием объектов, на которых эти действия заданы, и типов действий.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

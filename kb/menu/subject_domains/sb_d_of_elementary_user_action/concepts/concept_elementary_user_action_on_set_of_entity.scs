@@ -1,0 +1,25 @@
+sc_node_not_relation->	concept_elementary_user_action_on_set_of_entity;;
+
+concept_elementary_user_action_on_set_of_entity => nrel_main_idtf: [элементарное пользовательское действие над множеством сущностей] (*<- lang_ru ;;*);;
+concept_elementary_user_action_on_set_of_entity  => nrel_idtf: [действие над множеством сущностей] (*<- lang_ru ;;*);;
+concept_elementary_user_action_on_set_of_entity  => nrel_main_idtf: [elementary user action on set of fact] (*<- lang_en ;;*);;
+
+definition -> ...
+	(*
+	=> nrel_main_idtf: [Опр.(элементарное пользовательское действие над множеством сущностей)] (*<- lang_ru ;;*);;
+	-> rrel_key_sc_element: concept_elementary_user_action_on_set_of_entity;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_elementary_user_action;;
+		-> concept_sign;;
+		-> nrel_argument;;
+		-> set;;
+		-> entity;;
+		*);;	
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Элементарное пользовательское действие над множеством сущностей — элементарное пользовательское действие, аргументом которого является знак множества сущностей.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+concept_elementary_user_action_on_set_of_entity  => nrel_inclusion: concept_elementary_user_action_on_sc_text; concept_elementary_user_action_refine_the_command_specification;;
