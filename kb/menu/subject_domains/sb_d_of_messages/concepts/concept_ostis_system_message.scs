@@ -22,7 +22,7 @@ definition -> ...
 
 concept_ostis_system_message <= nrel_subdividing: ...
 	(*
-	-> concept_receptor_ostis_system_message;
+	-> concept_receptor_ostis_system_message;;
 	-> concept_effector_ostis_system_message;;
 	=> nrel_main_idtf: [Разбиение по признаку адресата сообщения](*<- lang_ru ;;*);;
 	*);;

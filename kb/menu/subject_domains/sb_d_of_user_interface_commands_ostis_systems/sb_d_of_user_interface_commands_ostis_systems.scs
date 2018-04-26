@@ -1,4 +1,4 @@
-﻿sc_node_struct -> sb_d_of_user_interface_commands_ostis_systems;;
+sc_node_struct -> sb_d_of_user_interface_commands_ostis_systems;;
 
 sb_d_of_user_interface_commands_ostis_systems => nrel_main_idtf:
 	[Предметная область интерфейсных команд пользователя ostis-системы]

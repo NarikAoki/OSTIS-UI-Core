@@ -31,7 +31,7 @@ statement ->...
 		(*
  		-> [Действие вывода базовой декомпозиции указанной сущности может быть реализовано нажатием левой кнопки мыши по сущности, которая имеет базовую декомпозицию.](*<- lang_ru;;*);;
 		*);;
-	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
 	*);;
 
 nrel_basic_decomposition => nrel_main_idtf: [базовая декомпозиция*] (*<- lang_ru ;;*);;

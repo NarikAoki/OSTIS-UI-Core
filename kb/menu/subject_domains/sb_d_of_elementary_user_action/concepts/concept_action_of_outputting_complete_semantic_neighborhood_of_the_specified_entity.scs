@@ -33,7 +33,7 @@ statement ->...
 		(*
  		-> [Действие вывода полной семантической окрестности указанной сущности может быть реализовано нажатием левой кнопки мыши по сущности.](*<- lang_ru;;*);;
 		*);;
-	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
 	*);;
 
 concept_action_of_outputting_complete_semantic_neighborhood_of_the_specified_entity  => nrel_inclusion: concept_action_of_outputting_minimal_semantic_neighborhood_of_the_specified_entity; concept_action_of_outputting_particular_semantic_neighborhood_of_the_specified_entity; concept_action_of_entity_reference_for_which_basic_decomposition_is_requested;;

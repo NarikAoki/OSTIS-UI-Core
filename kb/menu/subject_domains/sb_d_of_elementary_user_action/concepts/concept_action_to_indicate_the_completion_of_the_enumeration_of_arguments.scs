@@ -32,7 +32,7 @@ statement ->...
 		(*
  		-> [Действие указания факта завершения перечисления аргументов может быть реализовано двойным нажатием левой кнопки мыши](*<- lang_ru;;*);;
 		*);;
-	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
 	*);;
 
 nrel_initiation => nrel_main_idtf: [инициализация*] (*<- lang_ru ;;*);;

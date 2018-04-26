@@ -1,0 +1,39 @@
+sc_node_struct -> sb_d_of_elementary_user_actions;;
+
+sb_d_of_elementary_user_actions => nrel_main_idtf:
+	[Предметная область элементарных пользовательских действий]
+	(* <- lang_ru;; *);
+	[Subject domain of elementary user action]
+	(* <- lang_en;; *);;
+
+sb_d_of_elementary_user_actions <- subject_domain;;
+
+sb_d_of_elementary_user_actions -> rrel_maximum_studied_object_class: 
+	concept_elementary_user_action;; 
+
+sb_d_of_elementary_user_actions -> rrel_not_maximum_studied_object_class: 
+	concept_sc_text_insertion_action;
+	concept_sc_text_delete_action;
+	concept_sc_text_select_action;
+	concept_sc_text_copy_action;
+	concept_elementary_user_action_on_sc_text;
+	concept_action_to_indicate_the_completion_of_the_enumeration_of_arguments;
+	concept_action_of_canceling_the_specified_arguments_of_the_initiated_action;
+	concept_action_to_specify_the_argument_of_the_action_to_be_initiated;
+	concept_action_of_indicating_the_type_of_action_to_be_initiated;
+	concept_action_of_canceling_the_specified_arguments_of_the_initiated_action;
+	concept_action_of_resizing_ostis_window;
+	concept_action_of_moving_ostis_system_window;
+	concept_action_of_changing_the_configuration_of_the_ostis_system_window;
+	concept_action_of_expanding_workspace_of_window;
+	concept_action_of_narrowing_workspace_of_window;
+	concept_action_of_manipulationg_of_the_working_area_of_the_ostis_system_window;
+	concept_elementary_user_action_on_the_ostis_system_window;
+	concept_action_of_outputting_basic_decomposition_of_the_specified_entity;
+	concept_action_of_outputting_particular_semantic_neighborhood_of_the_specified_entity;
+	concept_action_of_outputting_minimal_semantic_neighborhood_of_the_specified_entity;
+	concept_action_of_outputting_complete_semantic_neighborhood_of_the_specified_entity;
+	concept_action_of_undoing_the_last_elementary_user_action;
+	concept_elementary_user_action_on_set_of_entity;
+	concept_elementary_user_action_on_entity;
+	concept_elementary_user_action_on_sc_text;;

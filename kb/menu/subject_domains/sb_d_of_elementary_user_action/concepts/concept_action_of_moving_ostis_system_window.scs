@@ -37,7 +37,7 @@ statement ->...
 		(*
  		-> [Действие перемещения окна ostis-системы может быть реализовано одновременным нажатием левой кнопки мыши по выбранному окну ostis-системы и передвижением курсора мыши в точку экрана, куда нужно переместить это окно.](*<- lang_ru;;*);;
 		*);;
-	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
 	*);;
 
 concept_point => nrel_main_idtf: [точка] (*<- lang_ru ;;*);; 

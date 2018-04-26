@@ -31,7 +31,7 @@ statement ->...
 		(*
  		-> [Действие копирования sc-текста может быть реализовано комбинацией клавиш «Сtrl» + «С» на клавиатуре.](*<- lang_ru;;*);;
 		*);;
-	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
 	*);;
 
 concept_key_c => nrel_main_idtf: [клавиша «c»] (*<- lang_ru ;;*);; 

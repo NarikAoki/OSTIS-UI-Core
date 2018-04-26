@@ -12,7 +12,7 @@ definition -> ...
 		(*
 		-> concept_action_of_manipulationg_of_the_working_area_of_the_ostis_system_window;;
 		-> concept_viewport;;
-		-> сoncept_sc_text;;
+		-> concept_sc_text;;
 		-> concept_window;;
 		-> ostis_system;;
 		*);;
@@ -36,7 +36,7 @@ statement ->...
 		(*
  		-> [Действие расширения рабочей области окна может быть реализовано прокруткой колеса мыши вперёд или нажатием комбинации клавиш Ctrl и “+”.](*<- lang_ru;;*);;
 		*);;
-	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
 	*);;
 
 concept_mouse_wheel => nrel_main_idtf: [колесо мыши] (*<- lang_ru ;;*);;
@@ -44,5 +44,5 @@ nrel_forward => nrel_main_idtf: [вперёд*] (*<- lang_ru ;;*);;
 concept_key_ctrl => nrel_main_idtf: [клавиша «Сtrl»] (*<- lang_ru ;;*);;
 concept_key_plus => nrel_main_idtf: [клавиша «+»] (*<- lang_ru ;;*);;
 concept_key_combination => nrel_main_idtf: [комбинация клавиш] (*<- lang_ru ;;*);;
-сoncept_sc_text => nrel_main_idtf: [sc-текст] (*<- lang_ru ;;*);; 
+concept_sc_text => nrel_main_idtf: [sc-текст] (*<- lang_ru ;;*);; 
 concept_viewport => nrel_main_idtf: [область просмотра] (*<- lang_ru ;;*);; 

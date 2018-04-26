@@ -34,7 +34,7 @@ statement ->...
 		(*
  		-> [Действие выделение sc-текста может быть реализовано либо нажатием левой кнопки мыши и передвижением курсора мыши в сторону растяжения/сжатия области выделения, либо нажатием комбинации клавиш «Сtrl» + «->» или «Сtrl» + «<-».](*<- lang_ru;;*);;
 		*);;
-	<- rrel_axiom: sb_d_of_​​elementary_user_actions;;
+	<- rrel_axiom: sb_d_of_elementary_user_actions;;
 	*);;
 
 concept_key_left => nrel_main_idtf: [клавиша «<-»] (*<- lang_ru ;;*);; 
