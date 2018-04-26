@@ -35,3 +35,5 @@ sb_d_of_user_interface_components -> rrel_not_maximum_studied_object_class:
 sb_d_of_user_interface_components -> rrel_explored_relation: 
 	nrel_new_version;
 	nrel_version;;
+  
+sb_d_of_user_interface_components => nrel_private_subject_domain: sb_d_of_user_interface_windows;;
