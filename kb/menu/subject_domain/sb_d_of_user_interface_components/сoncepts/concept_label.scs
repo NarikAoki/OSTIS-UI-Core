@@ -26,11 +26,9 @@ definition -> ...
 		*);;
 	*);;
 	
-sb_d_of_ui_component => nrel_main_idtf: [Предметная область компонентов пользовательского интерфейса](*<- lang_ru ;;*);;
-
 statement->...
 	(*
-	<- rrel_theorem: sb_d_of_ui_component;;
+	<- rrel_theorem: sb_d_of_user_interface_components;;
 	-> rrel_key_sc_element: concept_label; sc_element;;
 	=> nrel_main_idtf:[Утв.(sc-элемент, метка)](*<- lang_ru ;;*);;
 	<=nrel_sc_text_translation:...
