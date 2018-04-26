@@ -1,0 +1,58 @@
+sc_node_norole_relation -> nrel_reference_point;;
+
+nrel_reference_point => nrel_main_idtf: 
+	[опорная точка*] (* <- lang_ru;; *);
+	[reference point*] (* <- lang_en;; *);; 
+nrel_reference_point => nrel_idtf: [точка отсчета*] (*<- lang_ru ;;*);;
+
+nrel_reference_point <- antireflexive_relation;;
+nrel_reference_point <- antitransitive_relation;;
+nrel_reference_point <- antisymmetric_relation;;
+nrel_reference_point <- norole_relation;;
+nrel_reference_point <- binary_relation;;
+nrel_reference_point <- oriented_relation;;
+
+nrel_reference_point => nrel_first_domain: concept_geometric_figure;;
+nrel_reference_point => nrel_second_domain: concept_geometric_point;;
+nrel_reference_point => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_geometric_figure;
+		concept_geometric_point;;
+		*);;
+	*);;
+
+nrel_reference_point <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(опорная точка*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> nrel_bound;
+		concept_geometric_figure;
+		nrel_axis;
+		concept_geometric_point;
+		concept_space_entity;
+		concept_plane;
+		concept_space;
+		binary_relation;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Опорная точка* — бинарное отношение, первым компонентом связок которого является знак геометрической фигуры, являющейся границей* пространственной сущности, вторым – знак точки, используемой для задания положения пространственной сущности относительно некоторой плоскости или пространства.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+statement -> ...
+	(*
+	<- rrel_theorem: sb_d_of_space_entity;;
+	-> rrel_key_sc_element: nrel_reference_point; nrel_rectangle_form; concept_geometric_point; nrel_center;;
+	=> nrel_main_idtf: [Утв.(точка, преобразование симметрии*, геометрическая фигура)](*<- lang_ru ;;*);;
+	<= nrel_sc_text_translation: ...	
+		(*
+		-> rrel_example : [Для прямоугольных границ* в качестве такой точки выбирается левая верхняя точка, для круглых – точка, являющаяся центром* круга.](*<- lang_ru ;;*);;
+		*);;
+	*);;
+
+nrel_center => nrel_main_idtf: [центр*](*<- lang_ru ;;*);;

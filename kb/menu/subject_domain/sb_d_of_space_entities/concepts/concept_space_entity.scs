@@ -1,0 +1,34 @@
+sc_node_not_relation -> concept_space_entity;;
+
+concept_space_entity => nrel_main_idtf: 
+	[пространственная сущность] (* <- lang_ru;; *);
+	[space entity] (* <- lang_en;; *);; 
+concept_space_entity => nrel_idtf: [множество пространственных сущностей] (*<- lang_ru ;;*);; 
+
+concept_space_entity <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(пространственная сущность)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> entity;
+		concept_plane;
+		concept_space;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Пространственная сущность - сущность, для которой задано положение как в рамках некоторой плоскости или пространства, так и относительно других сущностей в этой же плоскости или пространстве.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+concept_space_entity => nrel_inclusion:concept_user_interface_component;;
+concept_space_entity => nrel_inclusion:concept_geometric_point;;
+concept_space_entity => nrel_inclusion:concept_geometric_body;;
+concept_space_entity => nrel_inclusion:concept_graph;;
+
+entity => nrel_main_idtf: [сущность] (*<- lang_ru ;;*);;
+concept_geometric_point => nrel_main_idtf: [геометрическая точка] (*<- lang_ru ;;*);;
+concept_geometric_body => nrel_main_idtf: [геометрическое тело] (*<- lang_ru ;;*);;
+concept_graph => nrel_main_idtf: [граф] (*<- lang_ru ;;*);;
+concept_plane => nrel_main_idtf: [плоскость] (*<- lang_ru ;;*);;
+concept_space => nrel_main_idtf: [пространство] (*<- lang_ru ;;*);;

@@ -1,0 +1,50 @@
+sc_node_norole_relation -> nrel_coordinate;;
+
+nrel_coordinate => nrel_main_idtf: 
+	[координата*] (* <- lang_ru;; *);
+	[coordinate*] (* <- lang_en;; *);; 
+nrel_coordinate => nrel_idtf: [ координатное расположение*] (*<- lang_ru ;;*);;
+
+nrel_coordinate <- norole_relation;;
+nrel_coordinate <- ternary_relation;;
+nrel_coordinate <- oriented_relation;;
+
+nrel_coordinate => nrel_first_domain: concept_coordinate_system;;
+nrel_coordinate => nrel_second_domain: concept_geometric_point;;
+nrel_coordinate => nrel_third_domain: nrel_functional_mapping;;
+nrel_coordinate => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_coordinate_system;
+		nrel_functional_mapping;
+		concept_geometric_point;;
+		*);;
+	*);;
+
+nrel_coordinate <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(координата*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_coordinate_system;
+		concept_geometric_point;
+		nrel_bound;
+		concept_space_entity;
+		nrel_functional_mapping;
+		entity;
+		nrel_value;
+		number;
+		ternary_relation;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Координата* — тернарное отношение, первым компонентом связок которого является некоторая система координат, вторым - геометрическая точка, принадлежащая границе* некоторой пространственной сущности, третьим - функциональное соответствие между сущностями, специфицирующими систему координат, и набором чисел, соответствующих значению каждой из сущностей.](*<- lang_ru ;;*);;
+	*);;
+
+*);;
+
+nrel_value => nrel_main_idtf: [значение*](*<- lang_ru ;;*);;
+nrel_third_domain => nrel_main_idtf: [третий домен*](*<- lang_ru ;;*);;
+

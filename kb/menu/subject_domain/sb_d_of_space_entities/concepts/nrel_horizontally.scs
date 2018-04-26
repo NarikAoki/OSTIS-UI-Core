@@ -1,0 +1,33 @@
+sc_node_norole_relation -> nrel_horizontally;;
+
+nrel_horizontally => nrel_main_idtf: 
+	[по горизонтали*] (* <- lang_ru;; *);
+	[horizontally*] (* <- lang_en;; *);; 
+nrel_horizontally => nrel_idtf: [располагаться по горизонтали*] (*<- lang_ru ;;*);;
+
+nrel_horizontally <- norole_relation;;
+nrel_horizontally <- unary_relation;;
+nrel_horizontally <- oriented_relation;;
+
+nrel_horizontally => nrel_first_domain: concept_space_entity;;
+nrel_horizontally => nrel_definitional_domain: concept_space_entity;;
+
+nrel_horizontally <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(по горизонтали*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> unary_relation;
+		concept_space_entity;
+		nrel_be_more;
+		nrel_side;
+		nrel_rectangle_form;
+		concept_horizon_line;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [По горизонтали* — унарное отношение, компонентом связки которого является пространственная сущность, имеющая прямоугольную форму*, большая* из сторон* которой совпадает по направлению с линией горизонта.](*<- lang_ru ;;*);;
+	*);;
+*);;
+

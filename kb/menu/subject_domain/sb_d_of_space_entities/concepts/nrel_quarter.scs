@@ -1,0 +1,44 @@
+sc_node_norole_relation -> nrel_quarter;;
+
+nrel_quarter => nrel_main_idtf: 
+	[четверть*] (* <- lang_ru;; *);
+	[quarter*] (* <- lang_en;; *);; 
+nrel_quarter => nrel_idtf: [четверть системы координат*] (*<- lang_ru ;;*);;
+
+nrel_quarter <- antireflexive_relation;;
+nrel_quarter <- antitransitive_relation;;
+nrel_quarter <- antisymmetric_relation;;
+nrel_quarter <- norole_relation;;
+nrel_quarter <- binary_relation;;
+nrel_quarter <- oriented_relation;;
+
+nrel_quarter => nrel_first_domain: concept_cartesian_coordinate_system;;
+nrel_quarter => nrel_second_domain: concept_planar_angle;;
+nrel_quarter => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_cartesian_coordinate_system;
+		concept_planar_angle;;
+		*);;
+	*);;
+
+nrel_quarter <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(четверть*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_cartesian_coordinate_system;
+		concept_planar_angle;
+		nrel_axis;
+		nrel_coordinate;
+		binary_relation;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Четверть* — бинарное отношение, первым компонентом связок которого является знак декартовой системы координат, вторым – знак планарного угла, образованного осями координат*.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+concept_planar_angle => nrel_main_idtf: [планарный угол] (*<- lang_ru ;;*);;

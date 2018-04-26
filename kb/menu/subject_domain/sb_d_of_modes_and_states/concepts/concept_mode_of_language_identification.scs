@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_mode_of_language_identification;;
+
+concept_mode_of_language_identification => nrel_main_idtf: 
+	[режим языка идентификации] (* <- lang_ru;; *);
+	[mode of language identification] (*<- lang_en;; *);;  
+concept_mode_of_language_identification => nrel_idtf: [множество режимов языка идентификации] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_mode_of_language_identification;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_mode;    
+		nrel_identification_language;
+		nrel_object_of_action;;
+		*);;
+	=> nrel_main_idtf: [Опр.(режим языка идентификации)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Режим языка идентификации — режим, назначение которого состоит в установке конкретного языка идентификации для некоторого объекта воздействия.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_mode_of_language_identification => nrel_inclusion: concept_mode_of_russian_language_identification;;
+concept_mode_of_language_identification => nrel_inclusion: concept_mode_of_english_language_identification;;
+
+nrel_identification_language => nrel_main_idtf: [язык идентификации*] (*<- lang_ru ;;*);; 

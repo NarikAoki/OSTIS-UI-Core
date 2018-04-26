@@ -1,0 +1,39 @@
+sc_node_not_relation => concept_label;;
+
+concept_label => nrel_main_idtf:[метка](*<- lang_ru ;;*);;
+concept_label => nrel_idtf:[множество меток](*<- lang_ru ;;*);;
+concept_label => nrel_idtf:[label](*<- lang_en ;;*);;
+
+concept_label => nrel_inclusion:concept_text_label;;
+concept_label => nrel_inclusion:concept_icon;;
+
+subject_domain -> sb_d_of_ui_component;;
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_label;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_scg_frame;
+ 		nrel_idtf;
+ 		concept_command;
+		concept_sign;;
+		*);;
+	=> nrel_main_idtf: [Опр.(метка)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Метка - знак scg-рамки, являющейся идентификатором некоторой команды.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+	
+statement->...
+	(*
+	<- rrel_theorem: sb_d_of_user_interface_components;;
+	-> rrel_key_sc_element: concept_label; sc_element;;
+	=> nrel_main_idtf:[Утв.(sc-элемент, метка)](*<- lang_ru ;;*);;
+	<=nrel_sc_text_translation:...
+		(*
+		-> rrel_example :[С помощью метки пользователь имеет возможность повлиять на состояние как отображаемых на экране объектов, так и на состояние sc-элементов, знаки которых и скрываются за каждой меткой](*<- lang_ru ;;*);;
+		*);;
+	*);;
+

@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_mode_of_english_language_identification;;
+
+concept_mode_of_english_language_identification => nrel_main_idtf: 
+	[режим англоязычной идентификации] (* <- lang_ru;; *);
+	[mode of english language identification] (*<- lang_en;; *);;  
+concept_mode_of_english_language_identification => nrel_idtf: [множество режимов англоязычной идентификации] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_mode_of_english_language_identification;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_mode;    
+		lang_en;
+		nrel_identification_language;;
+		*);;
+	=> nrel_main_idtf: [Опр.(режим англоязычной идентификации)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Режим англоязычной идентификации — режим, назначение которого состоит в установке Английского языка идентификации.](*<- lang_ru ;;*);;  
+		*);;
+	*);;

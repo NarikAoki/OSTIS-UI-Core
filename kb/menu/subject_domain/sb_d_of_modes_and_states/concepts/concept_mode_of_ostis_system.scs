@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_mode_of_ostis_system;;
+
+concept_mode_of_ostis_system => nrel_main_idtf: 
+	[режим ostis-системы] (* <- lang_ru;; *);
+	[mode of ostis system] (*<- lang_en;; *);;  
+concept_mode_of_ostis_system => nrel_idtf: [множество режимов ostis-системы] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_mode_of_ostis_system;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_mode;    
+		ostis_system;
+		nrel_object_of_action;;
+		*);;
+	=> nrel_main_idtf: [Опр.(режим ostis-системы)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Режим ostis-системы — режим, объектом воздействия которого является ostis-система.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+nrel_object_of_action => nrel_main_idtf: [объект воздействия*] (*<- lang_ru ;;*);; 

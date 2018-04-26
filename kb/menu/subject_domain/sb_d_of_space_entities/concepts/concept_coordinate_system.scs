@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_coordinate_system;;
+
+concept_coordinate_system => nrel_main_idtf: 
+	[система координат] (*<- lang_ru;;*); 
+	[coordinate system] (*<- lang_en;;*);; 
+concept_coordinate_system => nrel_idtf: [множество систем координат] (*<- lang_ru;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_coordinate_system;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_space_entity;;
+		*);;
+	=> nrel_main_idtf: [Опр.(система координат)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Система координат — совокупность абсолютных понятий и отношений, заданных на пространственных сущностях.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+
+concept_coordinate_system => nrel_inclusion:concept_cartesian_coordinate_system;;
+concept_coordinate_system => nrel_inclusion:concept_polar_coordinate_system;;

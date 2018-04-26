@@ -1,0 +1,46 @@
+sc_node_norole_relation -> nrel_bound;;
+
+nrel_bound => nrel_main_idtf: 
+	[граница*] (* <- lang_ru;; *);
+	[bound*] (* <- lang_en;; *);; 
+nrel_bound => nrel_idtf: [граничный контур*] (*<- lang_ru ;;*);;
+
+nrel_bound <- antireflexive_relation;;
+nrel_bound <- antitransitive_relation;;
+nrel_bound <- antisymmetric_relation;;
+nrel_bound <- norole_relation;;
+nrel_bound <- binary_relation;;
+nrel_bound <- oriented_relation;;
+
+nrel_bound => nrel_first_domain: concept_geometric_figure;;
+nrel_bound => nrel_second_domain: concept_linear_geometric_figure;;
+nrel_bound => nrel_definitional_domain: ...
+	(*
+	<= nrel_combination: ...
+		(*
+		-> concept_geometric_figure;
+		concept_linear_geometric_figure;;
+		*);;
+	*);;
+
+nrel_bound <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(граница*)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_linear_geometric_figure;
+		concept_geometric_point;
+		nrel_boundary_point;
+		concept_geometric_figure;
+		binary_relation;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Граница* — линейная геометрическая фигура, каждая точка которой является граничной* для заданной геометрической фигуры.](*<- lang_ru ;;*);;
+	*);;
+*);;
+
+concept_linear_geometric_figure => nrel_main_idtf: [линейная геометрическая фигура] (*<- lang_ru ;;*);;
+nrel_boundary_point => nrel_main_idtf: [граничная точка*] (*<- lang_ru ;;*);;
+concept_geometric_figure => nrel_main_idtf: [геометрическая фигура] (*<- lang_ru ;;*);;

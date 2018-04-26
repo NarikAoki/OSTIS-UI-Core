@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_mode;;
+
+concept_mode => nrel_main_idtf: 
+	[режим] (* <- lang_ru;; *);
+	[mode] (* <- lang_en;; *);;  
+concept_mode => nrel_idtf: [множество режимов] (*<- lang_ru ;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_mode;;
+	<= nrel_using_constants: ...
+		(*
+		-> situational_set; 
+		nrel_state;    
+		user_interface;
+		performed_action;;
+		*);;
+	=> nrel_main_idtf: [Опр.(режим)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Режим — ситуативное множество состояний пользовательского интерфейса, текущее состояние которого учитывается при выполнении некоторых действий.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+concept_mode => nrel_inclusion: concept_mode_of_language_identification;;
+concept_mode => nrel_inclusion: concept_mode_of_display_language_of_external_texts;;
+concept_mode => nrel_inclusion: concept_mode_of_display_message_sequence;;
+concept_mode => nrel_inclusion: concept_mode_of_last_executed_command;;
+concept_mode => nrel_inclusion: concept_mode_of_active_container;;
+
+concept_mode <= nrel_subdividing: ...
+	(*
+	=> nrel_main_idtf: [Разбиение по признаку объекта воздействия] (* <- lang_ru;; *);;
+	-> concept_mode_of_ostis_system_window;
+	concept_mode_of_ostis_system;;	
+	*);;
+
+concept_mode_of_display_language_of_external_texts => nrel_main_idtf: [режим языка отображения внешних текстов] (*<- lang_ru ;;*);;
+concept_mode_of_display_message_sequence => nrel_main_idtf: [режим отображения последовательности сообщений] (*<- lang_ru ;;*);;
+concept_mode_of_last_executed_command => nrel_main_idtf: [режим последней выполненной команды] (*<- lang_ru ;;*);;
+concept_mode_of_active_container => nrel_main_idtf: [режим активного контейнера] (*<- lang_ru ;;*);; 
+nrel_state => nrel_main_idtf: [состояние] (*<- lang_ru ;;*);;

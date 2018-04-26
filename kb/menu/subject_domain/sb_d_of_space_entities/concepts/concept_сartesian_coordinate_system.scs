@@ -1,0 +1,34 @@
+sc_node_not_relation -> concept_cartesian_coordinate_system;;
+
+concept_cartesian_coordinate_system => nrel_main_idtf: 
+	[декартова система координат] (*<- lang_ru;;*); 
+	[сartesian coordinate system] (*<- lang_en;;*);; 
+concept_cartesian_coordinate_system => nrel_idtf: [множество декартовых систем координат] (*<- lang_ru;;*);; 
+
+definition -> ...           
+	(*
+	-> rrel_key_sc_element: concept_cartesian_coordinate_system;;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_coordinate_system;
+		nrel_axis;
+		concept_plane;
+		concept_geometric_point;
+		concept_space;
+		nrel_projection;
+		nrel_distance;
+		nrel_coordinate_origin_of_cartesian_system;
+		nrel_perpendicularity;;
+		*);;
+	=> nrel_main_idtf: [Опр.(декартова система координат)] (*<- lang_ru ;;*);; 
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: [Декартова система координат — система координат с взаимно перпендикулярными осями* на плоскости или в пространстве, в которой каждая точка однозначно определяется расстояниями* от начала декартовой системы координат* до проекций* определяемой точки на каждую из осей*.](*<- lang_ru ;;*);;  
+		*);;
+	*);;
+
+nrel_projection => nrel_main_idtf: [проекция*] (*<- lang_ru ;;*);;
+nrel_distance => nrel_main_idtf: [расстояние*] (*<- lang_ru ;;*);;
+nrel_perpendicularity => nrel_main_idtf: [перпендикулярность*] (*<- lang_ru ;;*);;
+
+

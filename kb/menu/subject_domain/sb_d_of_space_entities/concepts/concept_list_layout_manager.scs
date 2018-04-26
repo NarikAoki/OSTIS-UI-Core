@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_list_layout_manager;;
+
+concept_list_layout_manager => nrel_main_idtf: 
+	[списковый менеджер компоновки] (* <- lang_ru;; *);
+	[list layout manager] (* <- lang_en;; *);; 
+concept_list_layout_manager => nrel_idtf: [множество списковых менеджеров компоновки] (*<- lang_ru ;;*);; 
+
+concept_table_layout_manager <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(списковый менеджер компоновки)](*<- lang_ru ;;*);;
+	<= nrel_using_constants: ...
+		(*
+		-> concept_layout_manager;
+		concept_user_interface_component;
+		nrel_vertically;
+		nrel_horizontally ;;
+		*);;
+	<= nrel_sc_text_translation:...
+	(*
+	-> rrel_example: [Списковый менеджер компоновки — менеджер компоновки, размещающий компоненты пользовательского интерфейса по вертикали или по горизонтали.](*<- lang_ru ;;*);;
+	*);;
+*);;
+

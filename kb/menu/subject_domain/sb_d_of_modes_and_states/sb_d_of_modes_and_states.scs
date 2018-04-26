@@ -1,0 +1,20 @@
+sc_node_struct -> sb_d_of_modes_and_states;;
+
+sb_d_of_modes_and_states => nrel_main_idtf:
+	[Предметная область режимов и состояний]
+	(* <- lang_ru;; *);
+	[Subject domain of modes and states]
+	(* <- lang_en;; *);;
+
+sb_d_of_modes_and_states <- subject_domain;;
+
+sb_d_of_modes_and_states -> rrel_maximum_studied_object_class: 
+	concept_mode;; 
+
+sb_d_of_modes_and_states -> rrel_not_maximum_studied_object_class: 
+	concept_mode_of_ostis_system_window;
+	concept_mode_of_ostis_system;
+	concept_mode_of_language_identification;
+	concept_mode_of_russian_language_identification;
+	concept_mode_of_english_language_identification;;
+
